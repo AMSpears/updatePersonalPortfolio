@@ -1,13 +1,11 @@
-import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { Link } from "gatsby"
 import React from "react"
 import './style/intro.scss'
 
 const Intro = () => {
   return (
-    <Link to = '#about-me' className = 'intro-container' stripHash>
+    <a name = 'about-me' className = 'intro-container' >
       <h1>Intro</h1>
-    </Link>
+    </a>
   )
 }
 

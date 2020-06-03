@@ -1,5 +1,15 @@
+// FONT
+// FONT_COLORS
+$link_color: black;
+// BACKGROUND_COLORS
+
+// GENERAL STYLES
+* {
+  font-size: 20px;
+}
+
+// HEADER SPECIFIC STYLE
 header {
-  background-color: white;
   margin-bottom: 1.45rem;
 }
 
@@ -12,11 +22,11 @@ header {
 }
 
 .nav-links {
-  margin: 10px;
+  margin: 10px 20px;
 
   a {
     text-decoration: none;
-    color: black;
+    color: $link_color;
   }
 }
 

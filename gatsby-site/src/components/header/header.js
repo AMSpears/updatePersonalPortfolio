@@ -1,4 +1,5 @@
 import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import PropTypes from "prop-types"
 import React from "react"
 import "./header.scss"
@@ -16,19 +17,19 @@ const Header = ({ top, aboutMe, projects, medium, resume, contact }) => (
         <Link to="/" activeStyle={active}>{top}</Link>
       </div>
       <div className="nav-links">
-        <Link to="#aboutme" activeStyle={active}>{aboutMe}</Link>
+        <AnchorLink to='#about-me' activeStyle={active}>{aboutMe}</AnchorLink>
       </div>
       <div className="nav-links">
-        <Link to="#projects" activeStyle= {active}>{projects}</Link>
+        <AnchorLink to='#projects' activeStyle={active}>{projects}</AnchorLink>
       </div>
       <div className="nav-links">
-        <Link to="#medium" activeStyle= {active}>{medium}</Link>
+        <AnchorLink to="#medium" activeStyle= {active}>{medium}</AnchorLink>
       </div>
       <div className="nav-links">
-        <Link to="#resume" activeStyle= {active}>{resume}</Link>
+        <AnchorLink to="#resume" activeStyle= {active}>{resume}</AnchorLink>
       </div>
       <div className="nav-links">
-        <Link to="#contact" activeStyle= {active}>{contact}</Link>
+        <AnchorLink to="#contact" activeStyle= {active}>{contact}</AnchorLink>
       </div>
     </div>
   </header>

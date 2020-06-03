@@ -27,6 +27,7 @@ header {
   a {
     text-decoration: none;
     color: $link_color;
+    cursor: pointer;
 
     &:hover {
       font-weight: bold;
@@ -34,3 +35,7 @@ header {
   }
 }
 
+.active {
+   font-weight: bold;
+   text-decoration: underline;
+}

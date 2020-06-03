@@ -4,32 +4,26 @@ import PropTypes from "prop-types"
 import React from "react"
 import "./header.scss"
 
-// ACTIVE NAV STYLE
-const active = {
-  fontWeight: `bold`,
-  textDecoration: `underline`
-}
-
 const Header = ({ top, aboutMe, projects, medium, resume, contact }) => (
   <header>
     <div className="nav-container">
       <div className="nav-links">
-        <Link to="/" activeStyle={active}>{top}</Link>
+        <Link to="/" activeClassName="active">{top}</Link>
       </div>
       <div className="nav-links">
-        <AnchorLink to='#about-me' activeStyle={active}>{aboutMe}</AnchorLink>
+        <Link to='#about-me' activeClassName="active">{aboutMe}</Link>
       </div>
       <div className="nav-links">
-        <AnchorLink to='#projects' activeStyle={active}>{projects}</AnchorLink>
+        <AnchorLink to='#projects' activeClassName="active">{projects}</AnchorLink>
       </div>
       <div className="nav-links">
-        <AnchorLink to="#medium" activeStyle= {active}>{medium}</AnchorLink>
+        <AnchorLink to="#medium" activeClassName="active">{medium}</AnchorLink>
       </div>
       <div className="nav-links">
-        <AnchorLink to="#resume" activeStyle= {active}>{resume}</AnchorLink>
+        <AnchorLink to="#resume" activeClassName="active">{resume}</AnchorLink>
       </div>
       <div className="nav-links">
-        <AnchorLink to="#contact" activeStyle= {active}>{contact}</AnchorLink>
+        <AnchorLink to="#contact" activeClassName="active">{contact}</AnchorLink>
       </div>
     </div>
   </header>

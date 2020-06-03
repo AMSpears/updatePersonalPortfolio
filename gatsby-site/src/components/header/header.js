@@ -5,7 +5,8 @@ import "./header.scss"
 
 // ACTIVE NAV STYLE
 const active = {
-  color: `red`
+  fontWeight: `bold`,
+  textDecoration: `underline`
 }
 
 const Header = ({ top, aboutMe, projects, medium, resume, contact }) => (

@@ -14,6 +14,7 @@ class Header extends Component {
 
   openNav() {
     const innerWidth = window.innerWidth
+    //https://stackoverflow.com/questions/14949011/random-color-from-array
     const colors = ['#F76259', '#92F759', '#59F7E5', '#5985F7', '#DF5FFA']
     if (innerWidth < 768) {
       this.menuItems.current.style.width = '100%'

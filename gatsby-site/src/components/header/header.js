@@ -1,51 +1,69 @@
 import PropTypes from "prop-types"
-import React from "react"
+import {Link} from "gatsby"
+import React, {Component} from "react"
 import "./header.scss"
 
-const Header = ({ top, aboutMe, projects, medium, resume, contact }) => (
-  <header>
-    <div className="nav-container">
-      <div className="nav-links">
-        <a to="/">{top}</a>
-      </div>
-      <div className="nav-links">
-        <a href='#about-me'>{aboutMe}</a>
-      </div>
-      <div className="nav-links">
-        <a to='#projects' >{projects}</a>
-      </div>
-      <div className="nav-links">
-        <a to="#medium" >{medium}</a>
-      </div>
-      <div className="nav-links">
-        <a to="#resume" >{resume}</a>
-      </div>
-      <div className="nav-links">
-        <a to="#contact">{contact}</a>
-      </div>
-    </div>
-  </header>
-)
+class Header extends Component {
+  constructor() {
+    super()
+    this.menuItems = React.createRef()
+
+    this.openNav = this.openNav.bind(this)
+    this.closeNav = this.closeNav.bind(this)
+  }
+
+  openNav() {
+    const innerWidth = window.innerWidth
+    if (innerWidth < 768) {
+      this.menuItems.current.style.width = '100%'
+    }
+  }
+
+  closeNav() {
+    const innerWidth = window.innerWidth
+    if (innerWidth < 768) {
+      this.menuItems.current.style.width = '0%'
+    }
+  }
+
+  render() {
+    return (
+      <header>
+        <div className="nav-container">
+          <div className="menu-icon" onClick={() => this.openNav()}>
+            <div />
+            <div />
+            <div />
+          </div>
+          <div className="sub-links-overlay" ref={this.menuItems}>
+            <a href="#" className="closebtn" onClick={() => this.closeNav()}>
+              &times;
+            </a>
+            <div className="nav-links">
+              <div>
+                <Link to="/">Top</Link>
+                <a href='#about-me'>About Me</a>
+                <a href='#projects' >Projects</a>
+                <a href="#medium">Medium</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    )
+  }
+}
+
 
 Header.propTypes = {
-  siteTitle: PropTypes.string,
-  top: PropTypes.string,
-  aboutMe: PropTypes.string,
-  projects: PropTypes.string,
-  medium: PropTypes.string,
-  resume: PropTypes.string,
-  contact: PropTypes.string
+  siteTitle: PropTypes.string
 
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
-  top: `Top`,
-  aboutMe: `About me`,
-  projects: `Projects`,
-  medium: `Medium`,
-  resume: `Resume`,
-  contact: `Contact`
+  siteTitle: ``
 }
 
 export default Header

@@ -1,11 +1,14 @@
 // FONT
 // FONT_COLORS
 $link_color: black;
-// BACKGROUND_COLORS
 
-// GENERAL STYLES
+
+// GENERAL STYLE
 * {
   font-size: 20px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 // HEADER SPECIFIC STYLE
@@ -19,23 +22,129 @@ header {
   padding: 1.45rem 1.0875rem;
   display: flex;
   justify-content: center;
-}
-
-.nav-links {
-  margin: 10px 20px;
 
   a {
-    text-decoration: none;
-    color: $link_color;
-    cursor: pointer;
+    font-weight: 800;
+    font-size: 40px;
+    color: black;
+    margin: 0;
+  }
+  .nav-links {
+    a {
+      color: black;
+      margin: 0;
+      font-weight: 300;
+      font-size: 15px;
+      margin: 5px;
+      text-decoration: none;
+      color: $link_color;
+      cursor: pointer;
+      transition: text-shadow .3s;
 
-    &:hover {
-      font-weight: bold;
+      &:hover {
+        text-shadow: 0 0 .65px #333,
+          0 0 .65px #333;
+      }
     }
   }
 }
 
-.active {
-   font-weight: bold;
-   text-decoration: underline;
+
+
+/*MOBILE MENU BAR */
+.menu-icon {
+  margin: 0;
+  position: absolute;
+  right: 0;
+
+  div {
+    width: 35px;
+    height: 5px;
+    margin: 6px 20px;
+    background-color: black;
+  }
+}
+
+
+// FOR ACTIVE LINKS
+// .active {
+//    font-weight: bold;
+//    text-decoration: underline;
+// }
+
+
+/*MOBILE MENU BAR SPECIFIC STYLE*/
+@media screen and (max-device-width: 767px) {
+  .nav-links  {
+    a {
+      color: white;
+      margin: 0;
+      font-weight: 300;
+      font-size: 20px;
+    }
+  }
+
+  .sub-links-overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.9;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .nav-links {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .sub-links-overlay {
+    .nav-links  {
+      a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: white;
+        display: block;
+        transition: 0.3s
+      }
+    }
+    .closebtn {
+      position: absolute;
+      top: 20px;
+      right: 10px;
+      font-size: 60px;
+      color: white;
+      text-decoration: none;
+    }
+  }
+}
+
+/* BELOW CHANGES TO TABLES AND DESKTOP*/
+@media only screen and (min-device-width: 768px) {
+  .menu-icon {
+    div {
+      display: none;
+    }
+  }
+
+  .nav-links {
+    flex-direction: row;
+    padding: 5px;
+
+    a {
+      margin: 0 10px;
+    }
+  }
+
+  .closebtn {
+    display: none;
+  }
 }

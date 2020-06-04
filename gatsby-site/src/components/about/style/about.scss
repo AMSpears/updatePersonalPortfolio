@@ -3,22 +3,47 @@
   padding: 100px 40px;
 
   h1 {
-    font-size: 60px;
+    font-size: 35px;
   }
 
   p {
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 20px;
+    line-height: 25px;
 
     b {
-      font-size: 30px;
+      font-size: 20px;
     }
 
     span {
       text-decoration: underline;
       font-weight: bold;
-      font-size: 30px;
+      font-size: 20px;
 
     }
+  }
+}
+
+
+/* BELOW CHANGES TO TABLES AND DESKTOP*/
+@media only screen and (min-device-width: 768px) {
+  .about-container {
+
+    h1 {
+      font-size: 60px;
+    }
+
+    p {
+      font-size: 30px;
+      line-height: 35px;
+
+      b {
+        font-size: 30px;
+      }
+
+      span {
+        font-size: 30px;
+      }
+    }
+
   }
 }

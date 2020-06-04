@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
           margin: `0 auto`
         }}
       >
-      <AboutMe/>
+        <AboutMe/>
         <main>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with

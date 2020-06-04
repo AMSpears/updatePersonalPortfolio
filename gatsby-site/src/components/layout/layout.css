@@ -24,10 +24,9 @@ summary {
 }
 
 main {
-    background-color: #ffffff;
-    background-image: linear-gradient(180deg, #ffffff 70%, #FFE32C 100%);
-    margin: 0;
-    padding: 100px 40px;
+  background-color: #ffffff;
+  background-image: linear-gradient(180deg, #ffffff 70%, #FFE32C 100%);
+  margin: 0;
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;

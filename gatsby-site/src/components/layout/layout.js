@@ -33,7 +33,7 @@ const Layout = ({ children }) => {
         }}
       >
         <AboutMe/>
-        <main>{children}</main>
+        <main onScroll= {() => {if (window.scrollTo) { console.log('scrolled')}}}>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}

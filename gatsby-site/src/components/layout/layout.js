@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, {useRef} from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -23,7 +23,16 @@ const Layout = ({ children }) => {
       }
     }
   `)
+  const mainContainer = useRef()
 
+  const backgroundChange = () => {
+    // Define random color
+    const colors = ['#F76259', '#92F759', '#59F7E5', '#5985F7', '#DF5FFA']
+    const randomColor = colors[Math.floor(Math.random() * colors.length)]
+
+    // Update backgroun img color
+    mainContainer.current.style.backgroundImage = `linear-gradient(180deg, #ffffff 70%, ${randomColor} 100%)`;
+  }
   return (
     <div>
       <Header siteTitle={data.site.siteMetadata.title} />
@@ -33,7 +42,7 @@ const Layout = ({ children }) => {
         }}
       >
         <AboutMe/>
-        <main onScroll= {() => {if (window.scrollTo) { console.log('scrolled')}}}>{children}</main>
+        <main onClick= {() => backgroundChange() } ref= {mainContainer}>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}

@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, {useRef} from "react"
+import React, {useRef, useEffect, useState} from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -24,15 +24,24 @@ const Layout = ({ children }) => {
     }
   `)
   const mainContainer = useRef()
+  // Referenced this https://stackoverflow.com/questions/57453141/using-react-hooks-to-update-w-scroll
+  const [scrolling, setScrolling] = useState(false)
+  const [scrollTop, setScrollTop] = useState(20)
 
-  const backgroundChange = () => {
-    // Define random color
-    const colors = ['#F76259', '#92F759', '#59F7E5', '#5985F7', '#DF5FFA']
-    const randomColor = colors[Math.floor(Math.random() * colors.length)]
+  useEffect( (e) => {
+    const onScroll = (e) => {
+      // Define random color
+      const colors = ['#F76259', '#92F759', '#59F7E5', '#5985F7', '#DF5FFA']
+      const randomColor = colors[Math.floor(Math.random() * colors.length)]
+      // Update backgroun img color
+      mainContainer.current.style.backgroundImage = `linear-gradient(180deg, #ffffff 70%, ${randomColor} 100%)`
+      setScrollTop(e.target.documentElement.scrollTop)
+      setScrolling(e.target.documentElement.scrollTop > scrollTop)
+    }
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [scrollTop])
 
-    // Update backgroun img color
-    mainContainer.current.style.backgroundImage = `linear-gradient(180deg, #ffffff 70%, ${randomColor} 100%)`;
-  }
   return (
     <div>
       <Header siteTitle={data.site.siteMetadata.title} />
@@ -42,7 +51,7 @@ const Layout = ({ children }) => {
         }}
       >
         <AboutMe/>
-        <main onClick= {() => backgroundChange() } ref= {mainContainer}>{children}</main>
+        <main in={scrolling ? 1 : 0} ref= {mainContainer}>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}

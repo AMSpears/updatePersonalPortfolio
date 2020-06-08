@@ -33,8 +33,14 @@ const Layout = ({ children }) => {
       // Define random color
       const colors = ['#F76259', '#92F759', '#59F7E5', '#5985F7', '#DF5FFA']
       const randomColor = colors[Math.floor(Math.random() * colors.length)]
+
       // Update backgroun img color
-      mainContainer.current.style.backgroundImage = `linear-gradient(180deg, #ffffff 70%, ${randomColor} 100%)`
+      if (window.pageYOffset > 800) {
+
+        mainContainer.current.style.backgroundImage = `linear-gradient(180deg, #ffffff 70%, ${randomColor} 100%)`
+
+      }
+      // console.log(window.pageYOffset)
       setScrollTop(e.target.documentElement.scrollTop)
       setScrolling(e.target.documentElement.scrollTop > scrollTop)
     }

@@ -5,7 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, {useRef, useEffect, useState} from "react"
+import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -23,30 +23,6 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  const mainContainer = useRef()
-  // Referenced this https://stackoverflow.com/questions/57453141/using-react-hooks-to-update-w-scroll
-  const [scrolling, setScrolling] = useState(false)
-  const [scrollTop, setScrollTop] = useState(20)
-
-  useEffect( (e) => {
-    const onScroll = (e) => {
-      // Define random color
-      const colors = ['#F76259', '#92F759', '#59F7E5', '#5985F7', '#DF5FFA']
-      const randomColor = colors[Math.floor(Math.random() * colors.length)]
-
-      // Update backgroun img color
-      // if (window.pageYOffset > 800) {
-
-        // mainContainer.current.style.backgroundImage = `linear-gradient(180deg, #ffffff 70%, ${randomColor} 100%)`
-
-      // }
-      // console.log(window.pageYOffset)
-      setScrollTop(e.target.documentElement.scrollTop)
-      setScrolling(e.target.documentElement.scrollTop > scrollTop)
-    }
-    window.addEventListener('scroll', onScroll)
-    return () => window.removeEventListener('scroll', onScroll)
-  }, [scrollTop])
 
   return (
     <div>
@@ -56,7 +32,7 @@ const Layout = ({ children }) => {
           margin: `0 auto`
         }}
       >
-        <main in={scrolling ? 1 : 0} ref= {mainContainer}>{children}</main>
+        <main>{children}</main>
         <footer>
          <Contact/>
         </footer>

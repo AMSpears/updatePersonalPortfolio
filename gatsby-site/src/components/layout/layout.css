@@ -23,17 +23,6 @@ summary {
   display: block;
 }
 
-main {
-  margin: 0;
-  /* Create the parallax scrolling effect */
-  background-color: #ffffff;
-  background-image: linear-gradient(180deg, #ffffff 80%, red 100%);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100%;
-}
 audio,
 canvas,
 progress,

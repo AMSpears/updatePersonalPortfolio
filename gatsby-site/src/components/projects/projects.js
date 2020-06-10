@@ -17,37 +17,37 @@ const Projects = () => {
      <div className = 'projects-imgs-container'>
       <div className = 'project'>
         <Link to = '/frs-verizon'>
-          <img src = {FRS_Project}/>
+          <img src = {FRS_Project} alt = 'First Responders - Verizon'/>
         </Link>
       </div>
       <div className = 'project'>
         <Link to = '/sft-sansumg'>
-          <img src = {SFT_Project}/>
+          <img src = {SFT_Project} alt = 'Solve For Tomorrow - Sansumg'/>
         </Link>
       </div>
       <div className = 'project'>
         <Link to = '/above-all-security'>
-          <img src = {Above_All_Security}/>
+          <img src = {Above_All_Security} alt = 'Above All Security'/>
         </Link>
       </div>
       <div className = 'project'>
         <Link to = '/shopping-list'>
-          <img src = {Shopping_List}/>
+          <img src = {Shopping_List} alt = 'Shopping List' />
         </Link>
       </div>
       <div className = 'project'>
         <Link to = '/home-finder'>
-          <img src = {Home_Finder}/>
+          <img src = {Home_Finder} alt = 'Home Finder'/>
         </Link>
       </div>
       <div className = 'project'>
         <Link to = '/trivia-game'>
-          <img src = {Trivia_Game}/>
+          <img src = {Trivia_Game} alt = 'Trivia Game'/>
         </Link>
       </div>
       <div className = 'project'>
         <Link to = '/weather-app'>
-          <img src = {Weather_App}/>
+          <img src = {Weather_App} alt = 'Weather App' />
         </Link>
       </div>
      </div>

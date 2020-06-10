@@ -43,13 +43,13 @@ class Header extends Component {
             <a href="#" className="closebtn" onClick={() => this.closeNav()}>
               &times;
             </a>
-            <div className="nav-links">
+            <div className="nav-links" onClick={() => this.closeNav()}>
               <div>
                 <Link to="/">Top</Link>
                 <a href='#about-me'>About Me</a>
                 <a href='#projects' >Projects</a>
                 <a href="#medium">Medium</a>
-                <a href={Resume} target = '_blank'>Resume</a>
+                <a href={Resume} target = '_blank' rel='noreferrer'>Resume</a>
                 <a href="#contact">Contact</a>
               </div>
             </div>

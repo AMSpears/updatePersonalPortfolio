@@ -1,0 +1,49 @@
+.other-projects-container {
+  padding: 100px 40px;
+
+  h1 {
+    font-size: 35px;
+    margin-bottom: 50px;
+  }
+  .projects-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+}
+
+
+/* BELOW CHANGES TO TABLES AND DESKTOP*/
+@media only screen and (min-device-width: 768px) {
+  .other-projects-container {
+    padding: 200px 100px;
+
+    h1 {
+      font-size: 60px;
+      margin-bottom: 100px;
+    }
+    .projects-img-container {
+
+      .other-projects {
+        margin: 10px;
+
+        img {
+          max-width: 500px;
+          max-height: 500px;
+          width: 100%;
+        }
+      }
+
+      .other-projects:nth-child(odd){
+        margin: 10px;
+
+         img {
+           max-width: 400px;
+           max-height: 400px;
+         }
+      }
+    }
+
+  }
+}

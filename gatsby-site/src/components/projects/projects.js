@@ -1,4 +1,4 @@
-// import {Link} from "gatsby"
+import {Link} from "gatsby"
 import React from "react"
 import "./style/projects.scss"
 import FRS_Project from './images/projects/FRS_Project.jpg'
@@ -16,25 +16,39 @@ const Projects = () => {
      <h1>Select Works</h1>
      <div className = 'projects-imgs-container'>
       <div className = 'project'>
-        <img src = {FRS_Project}/>
+        <Link to = '/frs-verizon'>
+          <img src = {FRS_Project}/>
+        </Link>
       </div>
       <div className = 'project'>
-        <img src = {SFT_Project}/>
+        <Link to = '/sft-sansumg'>
+          <img src = {SFT_Project}/>
+        </Link>
       </div>
       <div className = 'project'>
-        <img src = {Above_All_Security}/>
+        <Link to = '/above-all-security'>
+          <img src = {Above_All_Security}/>
+        </Link>
       </div>
       <div className = 'project'>
-        <img src = {Shopping_List}/>
+        <Link to = '/shopping-list'>
+          <img src = {Shopping_List}/>
+        </Link>
       </div>
       <div className = 'project'>
-        <img src = {Home_Finder}/>
+        <Link to = '/home-finder'>
+          <img src = {Home_Finder}/>
+        </Link>
       </div>
       <div className = 'project'>
-        <img src = {Trivia_Game}/>
+        <Link to = '/trivia-game'>
+          <img src = {Trivia_Game}/>
+        </Link>
       </div>
       <div className = 'project'>
-        <img src = {Weather_App}/>
+        <Link to = '/weather-app'>
+          <img src = {Weather_App}/>
+        </Link>
       </div>
      </div>
     </div>

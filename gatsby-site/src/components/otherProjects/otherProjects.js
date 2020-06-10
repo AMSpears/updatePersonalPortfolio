@@ -4,7 +4,7 @@ import AboveAllSecurity  from '../projects/images/projects/above-all-security.jp
 
 const OtherProjects = () => {
   return (
-    <div className = 'other-projects-container'>
+    <div id = 'other-projects' className = 'other-projects-container'>
       <h1>Other Projects</h1>
       <div className = 'projects-img-container'>
         <div className = 'other-projects'>

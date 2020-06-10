@@ -12,7 +12,7 @@ import Weather_App from './images/projects/weather-app.jpg'
 
 const Projects = () => {
   return (
-    <div className = 'projects-container'>
+    <div id = 'projects' className = 'projects-container'>
      <h1>Select Works</h1>
      <div className = 'projects-imgs-container'>
       <div className = 'project'>

@@ -50,6 +50,7 @@ class Header extends Component {
                 <a href='#projects' >Projects</a>
                 <a href="#medium">Medium</a>
                 <a href={Resume} target = '_blank' rel='noreferrer'>Resume</a>
+                <a href="#other-projects">Other projects</a>
                 <a href="#contact">Contact</a>
               </div>
             </div>

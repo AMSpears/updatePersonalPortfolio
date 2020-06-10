@@ -1,8 +1,8 @@
-import PropTypes from "prop-types"
-import {Link} from "gatsby"
-import React, {Component} from "react"
+import PropTypes from 'prop-types'
+import {Link} from 'gatsby'
+import React, {Component} from 'react'
 import Resume from '../resume/AngieSpears_Resume.pdf'
-import "./header.scss"
+import './header.scss'
 
 class Header extends Component {
   constructor() {
@@ -30,28 +30,29 @@ class Header extends Component {
     }
   }
 
+
   render() {
     return (
       <header>
-        <div className="nav-container">
-          <div className="menu-icon" onClick={() => this.openNav()}>
+        <div className='nav-container'>
+          <div className='menu-icon' onClick={() => this.openNav()}>
             <div />
             <div />
             <div />
           </div>
-          <div className="nav-links-overlay" ref={this.menuItems}>
-            <a href="#" className="closebtn" onClick={() => this.closeNav()}>
+          <div className='nav-links-overlay' ref={this.menuItems}>
+            <a href='#' className='closebtn' onClick={() => this.closeNav()}>
               &times;
             </a>
-            <div className="nav-links" onClick={() => this.closeNav()}>
+            <div className='nav-links' onClick={() => this.closeNav()}>
               <div>
-                <Link to="/">Top</Link>
+                <Link to='/'>Top</Link>
                 <a href='#about-me'>About Me</a>
                 <a href='#projects' >Projects</a>
                 <a href="#medium">Medium</a>
                 <a href={Resume} target = '_blank' rel='noreferrer'>Resume</a>
-                <a href="#other-projects">Other projects</a>
-                <a href="#contact">Contact</a>
+                <a href='#other-projects'>Other projects</a>
+                <a href='#contact'>Contact</a>
               </div>
             </div>
           </div>

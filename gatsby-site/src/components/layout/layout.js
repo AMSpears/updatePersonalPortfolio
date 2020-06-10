@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "../header/header"
 import AboutMe from "../about/intro"
+import Contact from "../contact/contact"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -59,9 +60,7 @@ const Layout = ({ children }) => {
         <AboutMe/>
         <main in={scrolling ? 1 : 0} ref= {mainContainer}>{children}</main>
         <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+         <Contact/>
         </footer>
       </div>
     </div>

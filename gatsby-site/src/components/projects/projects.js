@@ -1,7 +1,6 @@
-import PropTypes from "prop-types"
-import {Link} from "gatsby"
+// import {Link} from "gatsby"
 import React from "react"
-import "./projects.scss"
+import "./style/projects.scss"
 import FRS_Project from './images/projects/FRS_Project.jpg'
 import SFT_Project from './images/projects/SFT_Project.jpg'
 import Above_All_Security from './images/projects/above-all-security.jpg'

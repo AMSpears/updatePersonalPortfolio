@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "../header/header"
-import AboutMe from "../about/intro"
 import Contact from "../contact/contact"
 import "./layout.css"
 
@@ -57,7 +56,6 @@ const Layout = ({ children }) => {
           margin: `0 auto`
         }}
       >
-        <AboutMe/>
         <main in={scrolling ? 1 : 0} ref= {mainContainer}>{children}</main>
         <footer>
          <Contact/>

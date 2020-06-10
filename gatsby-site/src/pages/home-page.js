@@ -7,7 +7,7 @@ import Projects from '../components/projects/projects.js'
 import Articles from '../components/articles/articles'
 import OtherProjects from '../components/otherProjects/otherProjects'
 
-const IndexPage = () => (
+const HomePage = () => (
   <Layout>
     <SEO title="Home" />
     <Intro/>
@@ -18,4 +18,4 @@ const IndexPage = () => (
   </Layout>
 )
 
-export default IndexPage
+export default HomePage

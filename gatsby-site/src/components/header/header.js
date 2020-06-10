@@ -1,6 +1,7 @@
 import PropTypes from "prop-types"
 import {Link} from "gatsby"
 import React, {Component} from "react"
+import Resume from '../resume/AngieSpears_Resume.pdf'
 import "./header.scss"
 
 class Header extends Component {
@@ -48,7 +49,7 @@ class Header extends Component {
                 <a href='#about-me'>About Me</a>
                 <a href='#projects' >Projects</a>
                 <a href="#medium">Medium</a>
-                <a href="#resume">Resume</a>
+                <a href={Resume} target = '_blank'>Resume</a>
                 <a href="#contact">Contact</a>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import './otherProjects.scss'
-import AboveAllSecurity  from '../projects/images/projects/above-all-security.jpg'
+import AboveAllSecurity  from '../projects/images/projects/above-all-tb.jpg'
 
 const OtherProjects = () => {
   return (

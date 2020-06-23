@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 const DaisysWineShop = () => (
   <Layout>
     <SEO title="Daisy's Wine Shop" />
-    <h1>Daisy's Wine Shop</h1>
+    <h1>Daisys Wine Shop</h1>
     <p>Content under construction</p>
     <Link to="/">Go back to the homepage</Link>
   </Layout>

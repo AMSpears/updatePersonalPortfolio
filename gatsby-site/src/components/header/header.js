@@ -40,6 +40,7 @@ class Header extends Component {
             <div />
             <div />
           </div>
+          <div><h1>Angie Spears</h1></div>
           <div className='nav-links-overlay' ref={this.menuItems}>
             <a href='#' className='closebtn' onClick={() => this.closeNav()}>
               &times;

@@ -22,8 +22,8 @@ header {
   position: absolute;
   width: 100%;
   top: 10px;
-  text-align: center;
-
+  display: flex;
+  align-items: baseline;
 }
 
 // FOR ACTIVE LINKS
@@ -94,12 +94,14 @@ header {
 @media only screen and (min-device-width: 768px) {
   .nav-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: row;
-    top: 30px;
+    align-items: baseline;
+    // top: 30px;
+    // padding: 10px;
 
     .nav-links {
-      padding: 5px;
+      // padding: 5px;
 
       a {
         font-size: 40px;

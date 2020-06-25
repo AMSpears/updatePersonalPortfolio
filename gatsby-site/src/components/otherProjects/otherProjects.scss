@@ -1,51 +1,70 @@
-.other-projects-container {
+.other-projects-section-container {
   padding: 100px 40px;
 
   h1 {
-    font-size: 35px;
-    margin-bottom: 50px;
+    font-size: 48px;
+    margin-bottom: 64px;;
     font-family: 'Montserrat', sans-serif;
   }
 
-  .projects-img-container {
+  .other-projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-
 }
 
 
 /* BELOW CHANGES TO TABLES AND DESKTOP*/
 @media only screen and (min-device-width: 768px) {
-  .other-projects-container {
-    padding: 200px 100px;
+  .other-projects-section-container {
+    margin: 0 135px;
 
     h1 {
-      font-size: 60px;
-      margin-bottom: 100px;
+      margin-bottom: 64px;
     }
-    .projects-img-container {
-
+    .other-projects-container {
+      display: flex;
+      flex-flow: column wrap;
+      /* Your container needs a fixed height, and it
+   * needs to be taller than your tallest column. */
+      height: 900px;
+      margin:0;
       .other-projects {
-        margin: 10px;
+        width: 30%;
+        // /* Optional */
+        position: relative;
+        margin: 1% 0;
+        box-sizing: border-box;
 
-        img {
-          max-width: 500px;
-          max-height: 500px;
-          width: 100%;
+        .project-img {
+          width: 460px;
         }
+
+        .even {
+          height: 340px;
+        }
+
+        .odd {
+          height: 300px;
+        }
+
       }
 
-      .other-projects:nth-child(odd){
-        margin: 10px;
 
-         img {
-           max-width: 400px;
-           max-height: 400px;
-         }
+      /* Re-order items into 3 rows */
+      .other-projects:nth-child(3n+1) {
+        order: 1;
       }
+
+      .other-projects:nth-child(3n+2) {
+        order: 2;
+      }
+
+      .other-projects:nth-child(3n) {
+        order: 3;
+      }
+
     }
-
   }
 }

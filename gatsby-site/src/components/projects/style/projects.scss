@@ -1,25 +1,25 @@
 .projects-container {
  padding: 100px 40px;
 
- .projects-imgs-container {
-  display: flex;
-  flex-wrap: wrap;
-
-   .project {
-    padding:20px;
-
-    img {
-      max-width: 500px;
-      max-height: 500px;
-      width: 100%;
+ div {
+    display: flex;
+    flex-direction: column;
+  h1 {
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .projects-imgs-container {
+    .project {
+      padding: 20px;
+      img {
+        max-width: 500px;
+        max-height: 500px;
+        width: 100%;
+      }
     }
-   }
+  }
  }
 
- h1 {
-  font-size: 35px;
-  font-family: 'Montserrat', sans-serif;
- }
 
 }
 
@@ -28,31 +28,33 @@
   .projects-container {
     padding: 200px 100px;
 
-    .projects-imgs-container {
-      display: flex;
-      flex-wrap: wrap;
-
-      .project {
+    div {
+      h1 {
+        font-size: 60px;
+        margin: 0 135px 64px 135px;
+      }
+      .projects-imgs-container {
         display: flex;
-        justify-content: center;
-        padding: 20px;
-        width: 50%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 135px;
 
-        img {
-          max-width: 500px;
-          max-height: 500px;
+        .project {
+          padding:0;
+          margin:0;
+          width: 50%;
+
+          img {
+            max-width: 500px;
+            max-height: 500px;
+          }
+        }
+
+        .project:nth-child(even) {
+          margin-top: 200px;
+          clear: both;
         }
       }
-
-      .project:nth-child(even) {
-        margin-top: 200px;
-        clear: both;
-      }
-    }
-
-    h1 {
-      font-size: 60px;
-      margin-bottom: 100px;
     }
   }
 }

@@ -15,7 +15,9 @@ import Provide_Services from './images/projects/provide-services.jpg'
 const Projects = () => {
   return (
     <div id = 'projects' className = 'projects-container'>
-     <h1>Select Works</h1>
+    <div>
+      <div><h1>Select Works</h1></div>
+
      <div className = 'projects-imgs-container'>
       <div className = 'project'>
         <Link to = '/pentimento'>
@@ -68,6 +70,7 @@ const Projects = () => {
         </Link>
       </div>
      </div>
+    </div>
     </div>
   )
 }

@@ -23,15 +23,6 @@ summary {
   display: block;
 }
 
-main {
-  margin-top: 50px;
-}
-/* BELOW CHANGES TO TABLES AND DESKTOP*/
-@media only screen and (min-device-width: 768px) {
-  main {
-    margin-top: 100px;
-  }
-}
 audio,
 canvas,
 progress,

@@ -13,17 +13,14 @@ $mobile_nav_bg_color: black;
   box-sizing: border-box;
 }
 
-// HEADER SPECIFIC STYLE
-header {
-  margin-bottom: 1.45rem;
-}
 // STYLE FOR BOTH MOBILE AND DESKTOP
 .nav-container {
-  position: absolute;
-  width: 100%;
-  top: 10px;
   display: flex;
-  align-items: baseline;
+  text-align: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 24px 27px;
+  margin: 0;
 }
 
 // FOR ACTIVE LINKS
@@ -93,16 +90,7 @@ header {
 /* BELOW CHANGES TO TABLES AND DESKTOP*/
 @media only screen and (min-device-width: 768px) {
   .nav-container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    align-items: baseline;
-    // top: 30px;
-    // padding: 10px;
-
     .nav-links {
-      // padding: 5px;
-
       a {
         font-size: 40px;
         color: $desktop_link_color;

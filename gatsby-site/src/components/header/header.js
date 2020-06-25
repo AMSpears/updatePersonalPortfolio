@@ -35,12 +35,12 @@ class Header extends Component {
     return (
       <header>
         <div className='nav-container'>
+          <div id = 'logo'><Link to = '/'>Angie Spears</Link></div>
           <div className='menu-icon' onClick={() => this.openNav()}>
             <div />
             <div />
             <div />
           </div>
-          <div><h1>Angie Spears</h1></div>
           <div className='nav-links-overlay' ref={this.menuItems}>
             <a href='#' className='closebtn' onClick={() => this.closeNav()}>
               &times;

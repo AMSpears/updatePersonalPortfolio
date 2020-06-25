@@ -28,7 +28,6 @@ $mobile_nav_bg_color: black;
       color: black;
       font-size: 30px;
     }
-
   }
 }
 
@@ -40,13 +39,24 @@ $mobile_nav_bg_color: black;
 
 /*MOBILE MENU BAR SPECIFIC STYLE*/
 @media screen and (max-device-width: 767px) {
+
+  .nav-container {
+    justify-content: center;
+    #logo {
+      padding: 0 10px;
+      a {
+        font-weight: 600;
+        font-size: 24px;
+      }
+    }
+  }
   .nav-links-overlay {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 2000;
     top: 0;
-    right: 0;
+    left: 0;
     background-color: $mobile_nav_bg_color;
     opacity: 0.95;
     overflow-x: hidden;
@@ -56,25 +66,25 @@ $mobile_nav_bg_color: black;
       position: relative;
       top: 25%;
       width: 100%;
-      text-align: center;
+      text-align: left;
       margin-top: 30px;
 
       a {
-        padding: 8px;
+        padding: 10px;
         text-decoration: none;
-        font-size: 36px;
         color: $mobile_link_color;
         display: block;
         transition: 0.3s;
         margin: 0;
-        font-weight: 300;
-        font-size: 20px;
+        font-weight: 400;
+        font-size: 32px;
+        margin-left: 20px;
       }
     }
     .closebtn {
       position: absolute;
-      top: 15px;
-      right: 20px;
+      top: 20px;
+      left: 20px;
       font-size: 60px;
       color: black;
       text-decoration: none;
@@ -84,7 +94,8 @@ $mobile_nav_bg_color: black;
   .menu-icon {
     margin: 0;
     position: absolute;
-    right: 0;
+    top: 20px;
+    left: 0;
 
     div {
       width: 35px;

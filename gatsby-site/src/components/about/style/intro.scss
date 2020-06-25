@@ -2,32 +2,37 @@
   background-color: #D7DADA;
   margin: 0;
   padding: 100px 40px;
-  h1 {
-    font-size: 32px;
-    font-family: 'Montserrat', sans-serif;
-  }
+  display: flex;
+  justify-content: center;
 
-  p {
-    font-family: 'Montserrat', sans-serif;
-    max-width: 600px;
-    font-size: 16px;
-    line-height: 25px;
+  div {
+      max-width: 600px;
+    h1 {
+      font-size: 48px;
+      line-height: 59px;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+    }
+
+    p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      line-height: 32px;
+      text-align: center
+    }
   }
 }
-
 
 /* BELOW CHANGES TO TABLES AND DESKTOP*/
 @media only screen and (min-device-width: 768px) {
   .intro-container {
     padding: 200px 100px;
 
-    h1 {
-      font-size: 64px;
+    div {
+      h1 {
+        font-size: 60px;
+      }
     }
 
-    p {
-      font-size: 24px;
-      line-height: 35px;
-    }
   }
 }

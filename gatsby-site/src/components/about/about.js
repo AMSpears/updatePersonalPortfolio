@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className = 'about-container'>
       <h1>About Me</h1>
-      <p> Ive worked with R/GA on projects for <b>Verizon</b> and <b>Samsung</b>. My Frontend experience include <b>React</b>, <b>Preact</b> and <b>Gatsby</b>. My backend experience includes <b>Node</b>, <b>Express</b>, <b>Postgress</b> and more. <span> Im currently looking for an amazing position with a great company in NYC.</span> </p>
+      <p> I&apos;ve worked with R/GA on projects for Verizon and Samsung. My Frontend experience include    React, Preact and Gatsby. My backend experience includes Node, Express, Postgress and more. I&apos;m currently looking for an amazing position with a great company in NYC. </p>
     </div>
   )
 }

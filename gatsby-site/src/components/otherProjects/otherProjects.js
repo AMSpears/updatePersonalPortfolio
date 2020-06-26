@@ -19,16 +19,16 @@ const OtherProjects = () => {
             <img className = 'project-img even' src = {FoodSearch} alt = 'Food Search'/>
           </div>
           <div className = 'other-projects'>
-            <img  className = 'project-img even' src = {ShoppingList} alt = 'Shopping List'/>
+            <img  className = 'project-img odd' src = {ShoppingList} alt = 'Shopping List'/>
           </div>
           <div className = 'other-projects'>
-            <img className = 'project-img odd' src = {WeatherApp} alt = 'Weather App'/>
+            <img className = 'project-img even' src = {WeatherApp} alt = 'Weather App'/>
           </div>
           <div className = 'other-projects'>
-            <img className = 'project-img even' src = {TriviaGame} alt = 'Trivia Game'/>
+            <img className = 'project-img odd' src = {TriviaGame} alt = 'Trivia Game'/>
           </div>
           <div className = 'other-projects'>
-            <img className = 'project-img odd' src = {HomeFinder} alt = 'Home Finder' />
+            <img className = 'project-img even' src = {HomeFinder} alt = 'Home Finder' />
           </div>
           <div className = 'other-projects'>
             <img className = 'project-img odd' src = {AboveAllSecurity} alt = 'project-name'/>

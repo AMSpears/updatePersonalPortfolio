@@ -11,7 +11,7 @@ import Provide_Services from '../../images/projects/provide-services.jpg'
 
 const Projects = () => {
   return (
-    <div className = 'projects-container'>
+    <div id = 'projects' className = 'projects-container'>
       <div>
         <div><h1>Select Works</h1></div>
         <div className = 'projects-inner-container'>

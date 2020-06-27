@@ -11,7 +11,7 @@ import AboveAllSecurity from '../../images/projects/above-all-tb.jpg'
 
 const OtherProjects = () => {
   return (
-    <div className = 'other-projects-section-container'>
+    <div  id = 'other-projects' className = 'other-projects-section-container'>
       <div>
         <h1>Other Projects</h1>
         <div className = 'other-projects-container'>

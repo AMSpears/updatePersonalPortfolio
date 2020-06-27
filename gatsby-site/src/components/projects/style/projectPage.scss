@@ -5,66 +5,68 @@
   text-align: left;
 }
 
-.img-placeholder {
-  img {
-    width: 100vw;
-
-  }
-}
-.about {
-  margin: 40px;
-
-  @media only screen and (min-width: 1024px) {
-    margin: 100px 120px;
-  }
-
-  p, strong {
-    @extend %commons-text-mobile;
-
-    @media only screen and (min-width: 1024px) {
-      font-size: 40px;
-      line-height: 48px;
+@media only screen and (min-width: 1024px) {
+  .header-placeholder {
+    img {
+      width: 100vw;
     }
-
   }
-}
+  .project-details-container {
+    display: flex;
+    justify-content: center;
+    div {
+      .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 48px 0;
 
-.projects-links-container {
-  display: flex;
-  margin: 20px;
+        h1 {
+          text-align: center;
+        }
 
-  @media only screen and (min-width: 1024px) {
-    padding: 40px 100px;
-  }
+        div {
+          display: flex;
+          justify-content:space-between;
 
-  .links {
-    margin: 0 20px;
+          div {
+            display: flex;
+            flex-direction: column;
 
-    a {
-      @extend %commons-text-mobile;
-      text-decoration: none;
-      cursor: pointer;
+            div {
+              h2 {
+                font-size: 24px;
+                margin-bottom:32px;
+              }
+            }
+          }
 
-      @media only screen and (min-width: 1024px) {
-        font-size: 40px;
+          div:nth-child(2) {
+            p {
+              max-width: 680px;
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
 
-        &:hover {
-          color: black;
-
+      .details-2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 48px 0;
+        h2 {
+          font-size:24px;
+          line-height: 29px;
+          max-width: 229px;
+        }
+        p {
+          max-width: 680px;
+          font-size: 16px;
+          line-height: 24px;
         }
       }
     }
   }
-}
-
-.project-img {
-  margin: 0 40px;
-
-  @media only screen and (min-width: 1024px) {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-
-  }
-
 }

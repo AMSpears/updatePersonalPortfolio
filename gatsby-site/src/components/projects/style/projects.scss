@@ -1,5 +1,4 @@
 .projects-container {
-//  padding: 100px 40px;
   margin: 48px 24px;
 
  div {
@@ -10,13 +9,27 @@
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
   }
-  .projects-imgs-container {
+  .projects-inner-container {
     .project {
       padding: 20px;
-      img {
-        max-width: 490px;
-        max-height: 460px;
-        width: 100%;
+
+      a {
+        text-decoration: none;
+        color: black;
+
+        img {
+          max-width: 490px;
+          max-height: 460px;
+          width: 100%;
+        }
+
+        h2 {
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -48,6 +61,12 @@
          a {
             img {
               width: 490px;
+            }
+            h2 {
+              font-size: 24px;
+            }
+            p {
+              font-size: 16px;
             }
          }
 

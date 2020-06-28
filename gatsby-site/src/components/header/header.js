@@ -32,6 +32,7 @@ class Header extends Component {
 
 
   render() {
+    const path = window.location.pathname
     return (
       <header>
         <div className='nav-container'>
@@ -46,15 +47,25 @@ class Header extends Component {
               &times;
             </a>
             <div id = 'top' className='nav-links' onClick={() => this.closeNav()}>
-              <div>
-                <Link to='#top'>Top</Link>
-                <a href='#about-me'>About Me</a>
-                <a href='#projects' >Projects</a>
-                <a href="#medium">Medium</a>
-                <a href='#other-projects'>Other projects</a>
-                <a href={Resume} target = '_blank' rel='noreferrer'>Resume</a>
-                <a href='#contact'>Contact</a>
-              </div>
+
+              {
+                path === '/' ? (
+                  <div>
+                    <Link to='#top'>Top</Link>
+                    <a href='#about-me'>About Me</a>
+                    <a href='#projects' >Projects</a>
+                    <a href="#medium">Medium</a>
+                    <a href='#other-projects'>Other projects</a>
+                    <a href={Resume} target = '_blank' rel='noreferrer'>Resume</a>
+                    <a href='#contact'>Contact</a>
+                  </div>
+                  ) : (
+                  <div>
+                    <a href={Resume} target = '_blank' rel='noreferrer'>Resume</a>
+                    <a href='#contact'>Contact</a>
+                  </div>
+                )
+              }
             </div>
           </div>
         </div>

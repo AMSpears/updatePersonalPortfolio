@@ -1,9 +1,11 @@
 .articles-container {
-  padding: 100px 40px;
+    margin: 48px 24px;
+
   div {
 
     h1 {
-      font-size: 35px;
+      font-size: 24px;
+      font-weight: 500;
       margin-bottom: 50px;
       font-family: 'Montserrat', sans-serif;
     }
@@ -12,12 +14,6 @@
       font-size: 20px;
       font-family: 'Montserrat', sans-serif;
       color: black;
-      cursor: pointer;
-      margin: 10px;
-
-      &:hover {
-        opacity: .8;
-      }
     }
   }
 }
@@ -26,19 +22,21 @@
 /* BELOW CHANGES TO TABLES AND DESKTOP*/
 @media only screen and (min-device-width: 768px) {
   .articles-container {
-    padding: 200px 100px;
+    margin: 64px 135px;
 
     div {
-      margin: 0 135px 64px 135px;
 
       h1 {
-        font-size: 60px;
+        font-size: 34px;
+        font-weight: 500;
         margin-bottom: 100px;
       }
 
       a {
-        font-size: 40px;
+        font-size: 24px;
+        line-height: 29px;
         margin: 20px;
+        cursor: pointer;
 
         &:hover {
           opacity: .8;

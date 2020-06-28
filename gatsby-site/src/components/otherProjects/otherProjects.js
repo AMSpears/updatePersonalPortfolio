@@ -16,26 +16,36 @@ const OtherProjects = () => {
           <div className = 'other-projects'>
             <Link to = '/food-search'>
               <img className = 'project-img even' src = {FoodSearch} alt = 'Food Search'/>
+              <h2>Food Search </h2>
+              <p>React, CSS</p>
             </Link>
           </div>
           <div className = 'other-projects'>
             <Link to = '/shopping-list'>
               <img  className = 'project-img odd' src = {ShoppingList} alt = 'Shopping List'/>
+              <h2>Shopping List</h2>
+              <p>React, CSS</p>
             </Link>
           </div>
           <div className = 'other-projects'>
             <Link to = '/weather-app'>
               <img className = 'project-img even' src = {WeatherApp} alt = 'Weather App'/>
+              <h2>Weather App</h2>
+              <p>React, CSS</p>
             </Link>
           </div>
           <div className = 'other-projects'>
             <Link to = '/trivia-game'>
               <img className = 'project-img odd' src = {TriviaGame} alt = 'Trivia Game'/>
+              <h2>Trivia Game</h2>
+              <p>React, CSS</p>
             </Link>
           </div>
           <div className = 'other-projects'>
             <Link to = '/home-finder'>
               <img className = 'project-img even' src = {HomeFinder} alt = 'Home Finder' />
+              <h2>Home Finder</h2>
+              <p>React, CSS</p>
             </Link>
           </div>
         </div>

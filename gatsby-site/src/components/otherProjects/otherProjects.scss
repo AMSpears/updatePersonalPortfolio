@@ -8,7 +8,8 @@
 
 
     h1 {
-      font-size: 35px;
+      font-size: 24px;
+      font-weight: 500;
       margin-bottom: 64px;;
       font-family: 'Montserrat', sans-serif;
     }
@@ -21,12 +22,22 @@
       .other-projects {
         padding: 20px;
 
-       a {
-         .project-img {
-           margin: 0;
-           max-width: 260px;
-         }
-       }
+        a {
+          text-decoration: none;
+          color: black;
+
+          .project-img {
+            max-width: 260px;
+          }
+
+          h2 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
       }
     }
   }
@@ -36,17 +47,18 @@
 /* BELOW CHANGES TO TABLES AND DESKTOP*/
 @media only screen and (min-device-width: 768px) {
   .other-projects-section-container {
-    margin: 0 135px;
+    margin: 64px 135px;
 
     div {
       h1 {
-        font-size: 60px;
+        font-size: 34px;
+        font-weight: 500;
       }
       .other-projects-container {
          justify-content: flex-start;
         /* Your container needs a fixed height, and it
     * needs to be taller than your tallest column. */
-        height: 1300px;
+        max-height: 1700px;
         margin:0;
 
         .other-projects {
@@ -54,19 +66,28 @@
           position: relative;
           margin: 1% 0;
           box-sizing: border-box;
+
           a {
             .project-img {
               width: 100%;
               max-width: 500px;
-             }
+            }
 
-             .even {
+            .even {
               height: 500px;
-             }
+            }
 
-             .odd {
+            .odd {
               height: 400px;
-             }
+            }
+
+            h2 {
+              font-size: 24px;
+            }
+
+            p {
+              font-size: 16px;
+            }
           }
         }
 

@@ -1,19 +1,21 @@
 .projects-container {
- padding: 100px 40px;
+//  padding: 100px 40px;
+  margin: 48px 24px;
 
  div {
     display: flex;
     flex-direction: column;
   h1 {
     font-size: 35px;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
   }
   .projects-imgs-container {
     .project {
       padding: 20px;
       img {
-        max-width: 500px;
-        max-height: 500px;
+        max-width: 490px;
+        max-height: 460px;
         width: 100%;
       }
     }
@@ -26,13 +28,12 @@
 /* BELOW CHANGES TO TABLES AND DESKTOP*/
 @media only screen and (min-device-width: 768px) {
   .projects-container {
-    padding: 200px 100px;
-    margin: 0 135px;
+    margin: 64px 135px;
 
     div {
       h1 {
-        font-size: 60px;
-        margin-bottom: 64px;
+        font-size: 34px;
+        font-weight: 500;
       }
       .projects-inner-container {
         display: flex;
@@ -46,8 +47,7 @@
 
          a {
             img {
-              width: 600px;
-              max-height: 700px;
+              width: 490px;
             }
          }
 

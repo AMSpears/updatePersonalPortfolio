@@ -1,9 +1,9 @@
 .contact-container {
-  padding: 100px 40px;
+  margin: 48px 24px;
 
   h1 {
-    font-size: 48px;
-    margin-bottom: 50px;
+    font-size: 24px;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
   }
 
@@ -15,8 +15,8 @@
       margin: 10px;
 
       a {
-        color: black;
-        font-size: 24px;
+        color: #333333;
+        font-size: 16px;
         cursor: pointer;
         font-family: 'Montserrat', sans-serif;
         text-align: left;
@@ -29,23 +29,24 @@
 /* BELOW CHANGES TO TABLES AND DESKTOP*/
 @media only screen and (min-device-width: 768px) {
   .contact-container {
-    padding: 200px 100px;
-    margin: 0px 135px;
+    margin: 64px 135px;
 
     h1 {
-      font-size: 60px;
-      margin-bottom: 64px;
+      font-size: 34px;
+      font-weight:500;
+      margin-bottom: 100px;
     }
 
     .contact-links-container {
       display: flex;
       flex-direction: row;
+      justify-content: center;
 
       .contact-link {
-        margin-right: 30px;
-
         a {
-          font-size: 30px;
+          font-size: 24px;
+          text-align: center;
+          padding: 0 20px;
 
           &:hover {
             opacity: .8;

@@ -6,10 +6,6 @@ import ShoppingList from '../../images/projects/shopping-list-2.jpg'
 import HomeFinder from '../../images/projects/real-estate-tb.jpg'
 import TriviaGame from '../../images/projects/trivia-game.jpg'
 import WeatherApp from '../../images/projects/weather-app-tb.png'
-// Temporary placeHolder
-// <div className = 'other-projects'>
-// <img className = 'project-img odd' src = {AboveAllSecurity} alt = 'project-name'/>
-// </div>
 
 const OtherProjects = () => {
   return (

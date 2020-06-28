@@ -4,6 +4,7 @@
  div {
     display: flex;
     flex-direction: column;
+
   h1 {
     font-size: 24px;
     font-weight: 500;
@@ -51,31 +52,33 @@
       .projects-inner-container {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
 
-        .project {
-          padding:0;
-          margin:10px;
+        div {
+          margin: 0 35px 0 0;
 
-         a {
-            img {
-              width: 490px;
-            }
-            h2 {
-              font-size: 24px;
-            }
-            p {
-              font-size: 16px;
-            }
-         }
+          .project {
+            padding: 0;
 
+            a {
+              img {
+               width: 490px;
+              }
+
+              h2 {
+                font-size: 24px;
+              }
+
+              p {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+        // unaligning second column
+        #uneven-column {
+          margin-top: 150px;
         }
 
-        .project:nth-child(even) {
-          margin-top: 100px;
-          clear: both;
-        }
       }
     }
   }

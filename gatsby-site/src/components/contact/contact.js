@@ -3,13 +3,14 @@ import './contact.scss'
 
 
 const Contact = () => {
+  const path = window.location.pathname
   return (
     <div id = 'contact' className = 'contact-container'>
-      <h1>Thanks for visiting</h1>
+      { path === '/' ?
+        <h1>Thanks for visiting</h1>
+        : <h1>Contact Me</h1>
+      }
       <div className = 'contact-links-container'>
-        <div className = 'contact-link'>
-          <a href = 'mailto:hello@angiespears.com' target = '_blank' rel='noreferrer'>Contact Me</a>
-        </div>
         <div className = 'contact-link'>
           <a href = 'mailto:hello@angiespears.com' target = '_blank' rel='noreferrer'>Email</a>
         </div>

@@ -21,12 +21,13 @@
       .other-projects {
         padding: 20px;
 
-       .project-img {
-         margin:0;
-         max-width: 260px;
+       a {
+         .project-img {
+           margin: 0;
+           max-width: 260px;
+         }
        }
       }
-
     }
   }
 }
@@ -53,19 +54,20 @@
           position: relative;
           margin: 1% 0;
           box-sizing: border-box;
+          a {
+            .project-img {
+              width: 100%;
+              max-width: 500px;
+             }
 
-          .project-img {
-            max-width: 560px;
+             .even {
+              height: 500px;
+             }
+
+             .odd {
+              height: 400px;
+             }
           }
-
-          .even {
-            height: 500px;
-          }
-
-          .odd {
-            height: 400px;
-          }
-
         }
 
 

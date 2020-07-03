@@ -16,6 +16,7 @@
       grid-gap: 1rem;
 
       .project {
+
         a {
           text-decoration: none;
           color: black;
@@ -53,14 +54,10 @@
         .projects-inner-container {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
-          grid-gap: 1rem;
+          grid-gap: 1.5rem;
 
           .project {
             a {
-              img {
-                width: 80%;
-              }
-
               h2 {
                 font-size: 24px;
               }

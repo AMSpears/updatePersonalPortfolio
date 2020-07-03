@@ -36,3 +36,11 @@
   font-size: 24px;
   line-height: 42px;
 }
+
+// section spacing
+@mixin mb-section-margin {
+  margin: 48px 0;
+}
+@mixin dk-section-margin {
+  margin: 64px 0;
+}

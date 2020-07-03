@@ -27,7 +27,7 @@
           }
 
           h2 {
-            font-size: 16px;
+            font-size: 24px;
             font-weight: 400;
             text-decoration: underline;
             @include content-font;
@@ -56,17 +56,6 @@
           grid-template-columns: repeat(2, 1fr);
           grid-gap: 1.5rem;
 
-          .project {
-            a {
-              h2 {
-                font-size: 24px;
-              }
-
-              p {
-                font-size: 14px;
-              }
-            }
-          }
         }
       }
     }

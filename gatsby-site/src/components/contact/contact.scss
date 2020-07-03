@@ -14,10 +14,12 @@
     flex-direction: column;
 
     .contact-link {
+      padding: 10px 0;
       a {
         @include content-font;
         color: #333333;
-        font-size: 16px;
+        font-size: 24px;
+        line-height: 36px;
         cursor: pointer;;
         text-align: left;
       }
@@ -42,7 +44,6 @@
 
       .contact-link {
         a {
-          font-size: 24px;
           text-align: center;
           padding: 0 40px;
 

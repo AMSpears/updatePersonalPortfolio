@@ -4,76 +4,74 @@
   @include mb-section-spacing;
   display: flex;
   flex-direction: column;
- div {
+  div {
 
-  h1 {
-    @include header-font;
-    @include mb-header-font-size;
-    @include header-color;
-  }
-  .projects-inner-container {
-    .project {
-      a {
-        text-decoration: none;
-        color: black;
+    h1 {
+      @include header-font;
+      @include mb-header-font-size;
+      @include header-color;
+    }
+    .projects-inner-container {
+      .project {
+        a {
+          text-decoration: none;
+          color: black;
 
-        img {
-          width: 100%;
-        }
+          img {
+            width: 100%;
+          }
 
-        h2 {
-          font-size: 16px;
-          font-weight: 400;
-          text-decoration: underline;
-          @include content-font;
-        }
+          h2 {
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration: underline;
+            @include content-font;
+          }
 
-        p {
-          font-size: 14px;
-          @include content-font;
+          p {
+            font-size: 14px;
+            @include content-font;
+          }
         }
       }
     }
   }
- }
+  }
 
+  /* BELOW CHANGES TO TABLES AND DESKTOP*/
+  @media only screen and (min-device-width: 768px) {
+    .projects-container {
+      display: flex;
+      justify-content: center;
+      @include dk-section-spacing;
 
-}
+      div {
+        h1 {
+        @include dk-header-font-size;
+        }
+        .projects-inner-container {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
 
-/* BELOW CHANGES TO TABLES AND DESKTOP*/
-@media only screen and (min-device-width: 768px) {
-  .projects-container {
-    display: flex;
-    justify-content: center;
-    @include dk-section-spacing;
+          .project {
+            a {
+              img {
+                max-width: 490px;
+                max-height: 460px;
+              }
 
-    div {
-      h1 {
-       @include dk-header-font-size;
-      }
-      .projects-inner-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+              h2 {
+                font-size: 24px;
+              }
 
-        .project {
-          a {
-            img {
-              max-width: 490px;
-              max-height: 460px;
-            }
-
-            h2 {
-              font-size: 24px;
-            }
-
-            p {
-              font-size: 14px;
+              p {
+                font-size: 14px;
+              }
             }
           }
         }
       }
     }
   }
-}

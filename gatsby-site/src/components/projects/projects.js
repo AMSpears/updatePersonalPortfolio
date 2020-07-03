@@ -22,7 +22,7 @@ const Projects = () => {
                 <p>React, CSS</p>
               </Link>
             </div>
-            <div className = 'project'>
+            <div className = 'project' id = 'second-column'>
               <Link to = '/pentimento'>
                 <img src = {Pentimento} alt = 'Pentimento'/>
                 <h2>Pentimento </h2>

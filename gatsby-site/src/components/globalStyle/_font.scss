@@ -1,0 +1,43 @@
+// fonts
+@mixin header-font {
+  font-family: 'Work Sans', sans-serif;
+}
+
+@mixin content-font {
+  font-family: 'Space Mono', monospace;
+}
+
+// color
+@mixin header-color {
+  color: #333333;
+}
+
+@mixin content-color {
+  color: #000000;
+}
+
+// mobile
+@mixin mb-header-font-size {
+  h1 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+
+}
+
+@mixin mb-content-font-size {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+// desktop
+@mixin dk-header-font-size {
+  font-size: 34px;
+  font-weight: 400;
+}
+
+@mixin dk-content-font-size {
+  font-size: 24px;
+  line-height: 42px;
+}

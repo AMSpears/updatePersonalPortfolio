@@ -2,7 +2,7 @@ import {Link} from "gatsby"
 import React from "react"
 import "./style/projects.scss"
 
-import Pentimento from '../../images/projects/pentimento-tb.jpg'
+import Pentimento from '../../images/projects/Pentimento-tb.jpg'
 import WineShop from '../../images/projects/daisys-wine-shop-tb.jpg'
 import FRS_Project from '../../images/projects/verizon-tb.jpg'
 import SFT_Project from '../../images/projects/SFT_Project.jpg'
@@ -15,8 +15,7 @@ const Projects = () => {
       <div>
         <div><h1>Select Works</h1></div>
         <div className = 'projects-inner-container'>
-          <div>
-            <div className = 'project'>
+          <div className = 'project'>
               <Link to = '/frs-verizon'>
                 <img src = {FRS_Project} alt = 'First Responders - Verizon'/>
                 <h2>Verizon: First Responders </h2>
@@ -37,8 +36,6 @@ const Projects = () => {
                 <p>React, CSS</p>
               </Link>
             </div>
-          </div>
-          <div id = 'uneven-column'>
             <div className = 'project'>
               <Link to = '/sft-sansumg'>
                 <span></span>
@@ -64,7 +61,6 @@ const Projects = () => {
           </div>
         </div>
       </div>
-    </div>
   )
 }
 

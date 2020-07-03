@@ -1,45 +1,54 @@
-.about-container {
-  margin: 48px 24px;
+@import '../../globalStyle/font';
 
+.about-container {
+  // margin: 48px 0;
   div {
     display: flex;
     flex-direction: column;
-    h1 {
-      font-size: 24px;
-      font-weight: 500;
-      color: #333333;
-      font-family: 'Montserrat', sans-serif;
+
+    #header-container {
+      h1 {
+        @include mb-header-font-size;
+        @include mb-header-font-size;
+        @include header-font;
+        @include header-color
+      }
     }
 
-    p {
-      font-size: 16px;
-      line-height: 28px;
-      font-weight: 500;
-      font-family: 'Montserrat', sans-serif;
+    #description-container {
+
+      p {
+        @include mb-content-font-size;
+        @include content-font;
+        @include content-color;
+      }
     }
   }
+
 }
 
 
 /* BELOW CHANGES TO TABLES AND DESKTOP*/
 @media only screen and (min-device-width: 768px) {
   .about-container {
-    margin: 64px 135px;
+    // margin: 64px 0;
 
     div {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-evenly;
 
-      h1 {
-        font-size: 34px;
-        font-weight: 500;
+      #header-container {
+        h1 {
+          @include dk-header-font-size;
+        }
       }
 
-      p {
-        font-size: 24px;
-        line-height: 42px;
-        max-width: 800px;
+      #description-container {
+        p {
+          @include dk-content-font-size;
+          max-width: 800px;
+        }
       }
     }
   }

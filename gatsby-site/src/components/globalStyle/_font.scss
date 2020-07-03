@@ -38,9 +38,9 @@
 }
 
 // section spacing
-@mixin mb-section-margin {
-  margin: 48px 0;
+@mixin mb-section-spacing {
+  padding: 48px 20px;
 }
-@mixin dk-section-margin {
-  margin: 64px 0;
+@mixin dk-section-spacing {
+  padding: 64px 100px;
 }

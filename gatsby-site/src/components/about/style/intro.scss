@@ -1,46 +1,62 @@
+@import '../../globalStyle/font';
+
 .intro-container {
-  margin: 0;
-  padding: 100px 40px;
   display: flex;
-  justify-content: center;
-  background-image: url('../../../images/bioPic.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right center;
-  background-size: cover;
+  justify-content: left;
+  background-color: #C4C4C4;
+  // background-image: url('../../../images/bioPic.jpg');
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-position: right center;
+  // background-size: cover;
+  height: inherit;
+  padding: 20px;
 
   div {
-    max-width: 600px;
-    text-shadow: 2px 0px black;
+    max-width: 571px;
 
-    h1 {
-      font-size: 48px;
-      line-height: 59px;
-      color: white;
-      font-family: 'Montserrat', sans-serif;
-      text-align: center;
+    div {
+
+      h1 {
+        @include header-color;
+        @include header-font;
+        font-size: 48px;
+        line-height: 59px;
+        font-weight: 400;
+        text-align: left;
+        text-shadow: 2px 0px #333333;
+      }
+
+    }
+    div {
+      p {
+        @include content-font;
+        color: #333333;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: left;
+      }
     }
 
-    p {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 24px;
-      line-height: 32px;
-      color: white;
-      text-align: center;
-    }
   }
 }
 
 /* BELOW CHANGES TO TABLES AND DESKTOP*/
 @media only screen and (min-device-width: 768px) {
   .intro-container {
-    padding: 400px 100px;
+    padding: 100px;
 
     div {
-      h1 {
-        font-size: 60px;
+      // padding: 30px;
+      // align-items: flex-start;
+      // align-content: flex-start;
+      // max-width:571px;
+      div {
+        h1 {
+          font-size: 60px;
+          line-height: 90px;
+        }
       }
     }
-
   }
 }

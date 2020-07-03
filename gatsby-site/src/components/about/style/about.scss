@@ -1,7 +1,7 @@
 @import '../../globalStyle/font';
 
 .about-container {
-  @include mb-section-margin;
+  @include mb-section-spacing;
 
   div {
     display: flex;
@@ -10,18 +10,17 @@
     #header-container {
       h1 {
         @include mb-header-font-size;
-        @include mb-header-font-size;
         @include header-font;
         @include header-color
       }
     }
 
     #description-container {
-
       p {
         @include mb-content-font-size;
         @include content-font;
         @include content-color;
+
       }
     }
   }
@@ -32,23 +31,26 @@
 /* BELOW CHANGES TO TABLES AND DESKTOP*/
 @media only screen and (min-device-width: 768px) {
   .about-container {
-    @include dk-section-margin;
+    @include dk-section-spacing;
 
     div {
-      display: flex;
       flex-direction: row;
       justify-content: space-evenly;
 
+
       #header-container {
+        margin-right: 90px;
+
         h1 {
           @include dk-header-font-size;
+          min-width: 200px;
         }
       }
 
       #description-container {
+
         p {
           @include dk-content-font-size;
-          max-width: 800px;
         }
       }
     }

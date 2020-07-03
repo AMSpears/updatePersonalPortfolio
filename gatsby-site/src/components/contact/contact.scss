@@ -1,10 +1,12 @@
+@import '../globalStyle/font';
+
 .contact-container {
-  margin: 48px 24px;
+  @include mb-section-spacing;
 
   h1 {
-    font-size: 24px;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
+    @include header-font;
+    @include header-color;
+    @include mb-header-font-size;
   }
 
   .contact-links-container {
@@ -12,13 +14,11 @@
     flex-direction: column;
 
     .contact-link {
-      margin: 10px;
-
       a {
+        @include content-font;
         color: #333333;
         font-size: 16px;
-        cursor: pointer;
-        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;;
         text-align: left;
       }
     }
@@ -29,16 +29,14 @@
 /* BELOW CHANGES TO TABLES AND DESKTOP*/
 @media only screen and (min-device-width: 768px) {
   .contact-container {
-    margin: 64px 135px;
+    @include dk-section-spacing;
 
     h1 {
-      font-size: 34px;
-      font-weight:500;
+      @include dk-header-font-size;
       margin-bottom: 100px;
     }
 
     .contact-links-container {
-      display: flex;
       flex-direction: row;
       justify-content: center;
 
@@ -46,7 +44,7 @@
         a {
           font-size: 24px;
           text-align: center;
-          padding: 0 20px;
+          padding: 0 40px;
 
           &:hover {
             opacity: .8;

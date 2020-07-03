@@ -1,80 +1,79 @@
-// .projects-container {
-//   // margin: 48px 24px;
-//   // padding: 100px 40px;
-//     display: flex;
-//     flex-direction: column;
-//  div {
+@import '../../globalStyle/font';
 
-//   h1 {
-//     font-size: 24px;
-//     font-weight: 500;
-//     color:#333333;
-//     font-family: 'Montserrat', sans-serif;
-//   }
-//   .projects-inner-container {
-//     .project {
-//       a {
-//         text-decoration: none;
-//         color: black;
+.projects-container {
+  @include mb-section-spacing;
+  display: flex;
+  flex-direction: column;
+ div {
 
-//         img {
-//           max-width: 318px;
-//           width: 100%;
-//         }
+  h1 {
+    @include header-font;
+    @include mb-header-font-size;
+    @include header-color;
+  }
+  .projects-inner-container {
+    .project {
+      a {
+        text-decoration: none;
+        color: black;
 
-//         h2 {
-//           font-size: 16px;
-//         }
+        img {
+          width: 100%;
+        }
 
-//         p {
-//           font-size: 14px;
-//         }
-//       }
-//     }
-//   }
-//  }
+        h2 {
+          font-size: 16px;
+          font-weight: 400;
+          text-decoration: underline;
+          @include content-font;
+        }
+
+        p {
+          font-size: 14px;
+          @include content-font;
+        }
+      }
+    }
+  }
+ }
 
 
-// }
+}
 
-// /* BELOW CHANGES TO TABLES AND DESKTOP*/
-// @media only screen and (min-device-width: 768px) {
-//   .projects-container {
-//     // margin: 64px 135px;
-//     display: flex;
-//     justify-content: center;
-//     div {
-//       h1 {
-//         font-size: 34px;
-//         font-weight: 500;
-//       }
-//       .projects-inner-container {
-//         display: flex;
-//         flex-direction: row;
-//         flex-wrap: wrap;
-//         justify-content: space-evenly;
-//         margin: 190px;
-//           .project {
-//             padding: 0;
-//             margin: 20px;
+/* BELOW CHANGES TO TABLES AND DESKTOP*/
+@media only screen and (min-device-width: 768px) {
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    @include dk-section-spacing;
 
-//             a {
-//               img {
-//                 // width: 690px;
-//                 max-width: 690px;
-//                 max-height: 640px;
-//               }
+    div {
+      h1 {
+       @include dk-header-font-size;
+      }
+      .projects-inner-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-//               h2 {
-//                 font-size: 24px;
-//               }
+        .project {
+          a {
+            img {
+              max-width: 490px;
+              max-height: 460px;
+            }
 
-//               p {
-//                 font-size: 16px;
-//               }
-//             }
-//           }
-//       }
-//     }
-//   }
-// }
+            h2 {
+              font-size: 24px;
+            }
+
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

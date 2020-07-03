@@ -5,7 +5,7 @@ import "./style/projects.scss"
 import Pentimento from '../../images/projects/Pentimento-tb.jpg'
 import WineShop from '../../images/projects/daisys-wine-shop-tb.jpg'
 import FRS_Project from '../../images/projects/verizon-tb.jpg'
-import SFT_Project from '../../images/projects/SFT_Project.jpg'
+import SFT_Project from '../../images/projects/samsung-tb.jpg'
 import Above_All_Security from '../../images/projects/above-all-tb.jpg'
 import Provide_Services from '../../images/projects/provide-services.jpg'
 

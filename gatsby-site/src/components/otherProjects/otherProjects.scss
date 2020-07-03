@@ -1,17 +1,19 @@
+@import '../globalStyle/font';
+
 .other-projects-section-container {
-  margin: 48px 24px;
+  @include mb-section-spacing;
 
   div {
      display: flex;
      flex-direction: column;
      justify-content: center;
 
-
-    h1 {
-      font-size: 24px;
-      font-weight: 500;
-      color: #333333;
-      font-family: 'Montserrat', sans-serif;
+    #header-container {
+      h1 {
+        @include header-font;
+        @include header-color;
+        @include mb-header-font-size;
+      }
     }
 
     .other-projects-container {
@@ -25,16 +27,21 @@
           color: black;
 
           .project-img {
-            max-width: 318px;
             width: 100%;
+            height:100%;
+            object-fit: cover;
           }
 
           h2 {
             font-size: 16px;
+            font-weight: 400;
+            text-decoration: underline;
+            @include content-font;
           }
 
           p {
             font-size: 14px;
+            @include content-font;
           }
         }
       }
@@ -46,40 +53,24 @@
 /* BELOW CHANGES TO TABLES AND DESKTOP*/
 @media only screen and (min-device-width: 768px) {
   .other-projects-section-container {
-    margin: 64px 135px;
+   @include dk-section-spacing;
 
     div {
-      h1 {
-        font-size: 34px;
-        font-weight: 500;
+
+      #header-container {
+        h1 {
+          @include dk-header-font-size;
+        }
       }
       .other-projects-container {
-        justify-content: flex-start;
-        /* Your container needs a fixed height, and it
-    * needs to be taller than your tallest column. */
-        max-height: 1700px;
-        margin:0;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 4rem;
 
         .other-projects {
-          width: 30%;
-          position: relative;
-          // margin: 1% 0;
-          box-sizing: border-box;
+          display: block;
 
           a {
-            .project-img {
-              width: 100%;
-              max-width: 500px;
-            }
-
-            .even {
-              height: 500px;
-            }
-
-            .odd {
-              height: 400px;
-            }
-
             h2 {
               font-size: 24px;
             }
@@ -90,20 +81,16 @@
           }
         }
 
-
-        /* Re-order items into 3 rows */
-        .other-projects:nth-child(3n+1) {
-          order: 1;
+        .other-projects:nth-child(1),
+        .other-projects:nth-child(2) {
+          grid-column: span 3;
         }
 
-        .other-projects:nth-child(3n+2) {
-          order: 2;
+        .other-projects:nth-child(3),
+        .other-projects:nth-child(4),
+        .other-projects:nth-child(5) {
+          grid-column: span 2;
         }
-
-        .other-projects:nth-child(3n) {
-          order: 3;
-        }
-
       }
     }
   }

@@ -5,13 +5,13 @@ import FoodSearch from '../../images/projects/food-search-tb.jpg'
 import ShoppingList from '../../images/projects/shopping-list-2.jpg'
 import HomeFinder from '../../images/projects/real-estate-tb.jpg'
 import TriviaGame from '../../images/projects/trivia-game.jpg'
-import WeatherApp from '../../images/projects/weather-app-tb.png'
+import WeatherApp from '../../images/projects/weather-app-tb.jpg'
 
 const OtherProjects = () => {
   return (
     <div  id = 'other-projects' className = 'other-projects-section-container'>
       <div>
-        <h1>Other Projects</h1>
+        <div id = 'header-container'><h1>Other Projects</h1></div>
         <div className = 'other-projects-container'>
           <div className = 'other-projects'>
             <Link to = '/food-search'>
@@ -22,14 +22,14 @@ const OtherProjects = () => {
           </div>
           <div className = 'other-projects'>
             <Link to = '/shopping-list'>
-              <img  className = 'project-img odd' src = {ShoppingList} alt = 'Shopping List'/>
+              <img  className = 'project-img even' src = {ShoppingList} alt = 'Shopping List'/>
               <h2>Shopping List</h2>
               <p>React, CSS</p>
             </Link>
           </div>
           <div className = 'other-projects'>
             <Link to = '/weather-app'>
-              <img className = 'project-img even' src = {WeatherApp} alt = 'Weather App'/>
+              <img className = 'project-img odd' src = {WeatherApp} alt = 'Weather App'/>
               <h2>Weather App</h2>
               <p>React, CSS</p>
             </Link>
@@ -43,7 +43,7 @@ const OtherProjects = () => {
           </div>
           <div className = 'other-projects'>
             <Link to = '/home-finder'>
-              <img className = 'project-img even' src = {HomeFinder} alt = 'Home Finder' />
+              <img className = 'project-img odd' src = {HomeFinder} alt = 'Home Finder' />
               <h2>Home Finder</h2>
               <p>React, CSS</p>
             </Link>

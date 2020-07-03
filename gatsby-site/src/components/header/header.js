@@ -46,12 +46,11 @@ class Header extends Component {
             <a href='#' className='closebtn' onClick={() => this.closeNav()}>
               &times;
             </a>
-            <div id = 'top' className='nav-links' onClick={() => this.closeNav()}>
+            <div className='nav-links' onClick={() => this.closeNav()}>
 
               {
                 path === '/' ? (
                   <div>
-                    <Link to='#top'>Top</Link>
                     <a href='#about-me'>About Me</a>
                     <a href='#projects' >Projects</a>
                     <a href="#medium">Medium</a>

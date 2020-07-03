@@ -2,8 +2,7 @@
 
 .projects-container {
   @include mb-section-spacing;
-  display: flex;
-  flex-direction: column;
+
   div {
 
     h1 {
@@ -12,6 +11,10 @@
       @include header-color;
     }
     .projects-inner-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 1rem;
+
       .project {
         a {
           text-decoration: none;
@@ -19,6 +22,7 @@
 
           img {
             width: 100%;
+            object-fit: cover;
           }
 
           h2 {
@@ -39,27 +43,22 @@
   }
 
   /* BELOW CHANGES TO TABLES AND DESKTOP*/
-  @media only screen and (min-device-width: 768px) {
+  @media only screen and (min-device-width: 769px) {
     .projects-container {
-      display: flex;
-      justify-content: center;
       @include dk-section-spacing;
-
       div {
         h1 {
         @include dk-header-font-size;
         }
         .projects-inner-container {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: space-between;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-gap: 1rem;
 
           .project {
             a {
               img {
-                max-width: 490px;
-                max-height: 460px;
+                width: 80%;
               }
 
               h2 {

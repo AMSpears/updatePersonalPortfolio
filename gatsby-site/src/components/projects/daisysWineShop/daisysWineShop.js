@@ -15,12 +15,12 @@ const DaisysWineShop = () => {
       <section className = 'project-details-container'>
         <div>
           <div className = 'details'>
-            <h1>Sansumg: Solve For Tomorrow</h1>
+            <h1>Daisy&apos;s Wine Shop</h1>
             <div>
               <div>
                 <div className = 'tech-details'>
                   <h2>Technologies</h2>
-                  <p>React,CSS</p>
+                  <p id ='tech-list'>React, Redux, Node, Express, Node, Sequelize</p>
                 </div>
                 <div className= 'tech-details'>
                   <h2>Links</h2>

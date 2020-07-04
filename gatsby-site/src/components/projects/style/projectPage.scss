@@ -114,14 +114,16 @@
              .tech-details {
                 margin-right: 70px;
                 margin-bottom: 0;
-               h2 {
-                 @include dk-content-font-size;
-               }
-
-               p,
-               a {
-                 @include content-font;
-               }
+                h2 {
+                  @include dk-content-font-size;
+                }
+                p {
+                  width: 300px;
+                }
+                p,
+                a {
+                  @include content-font;
+                }
 
              }
           }

@@ -11,7 +11,7 @@
 
   div {
     .details {
-      padding-bottom: 20px;
+      margin-bottom: 20px;
 
       h1 {
         text-align: left;
@@ -27,14 +27,12 @@
       div {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
 
         div {
           display: flex;
           flex-direction: column;
 
           .tech-details {
-            margin-bottom: 20px;
             h2 {
               @include header-font;
               @include mb-content-font-size;
@@ -60,7 +58,7 @@
     .details-2 {
       display: flex;
       flex-direction: column;
-      padding-top: 20px;
+      margin: 20px 0;
 
       h2 {
        @include mb-header-font-size;
@@ -96,7 +94,7 @@
 
     div {
       .details {
-        margin-bottom: 100px;
+        margin-bottom: 60px;
 
         h1 {
           text-align: left;
@@ -106,7 +104,6 @@
         div {
           display: flex;
           flex-direction: row;
-          justify-content: space-between;
 
           div {
             display: flex;
@@ -139,8 +136,8 @@
 
       .details-2 {
         flex-direction: row;
-        justify-content: space-between;
-        margin: 100px 0;
+        // justify-content: space-between;
+        margin: 50px 0;
 
         h2 {
           @include dk-header-font-size;

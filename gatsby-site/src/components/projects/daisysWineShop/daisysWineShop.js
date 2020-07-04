@@ -24,13 +24,15 @@ const DaisysWineShop = () => {
                 </div>
                 <div className= 'tech-details'>
                   <h2>Links</h2>
-                  <a href= "#" target= "blank">Github</a>
-                  <a href= "#" target= "blank">Site</a>
+                  <a href= "https://github.com/grace-shopper-daisys-dominators/daisys-dominators" target= "blank">Github</a>
+                  <a href= "https://daisys-wine-shop.herokuapp.com/" target= "blank">Site</a>
                 </div>
               </div>
               <div>
                 <div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
+                  <p>Daisy’s Wine shop is an e-commerce site I worked on at Grace Hopper. I used react.js in conjunction with redux.js to both create components that display, add, edit, and delete our products while communicating to our server to appropriately update the database.</p>
+                  <p>I created an account management portal that included Google Oath authentication. In addition to user-facing account management, I created a page for admins to manage their online wine store. Admins could view users and add/edit/remove wines in their store.
+                  </p>
                 </div>
               </div>
             </div>
@@ -39,8 +41,8 @@ const DaisysWineShop = () => {
             <img src = {SectionImgOne} alt = 'Site img' />
           </div>
           <div className = 'details-2'>
-            <h2>Lorem ipsum dolor sit</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <h2>How does it work?</h2>
+            <p>Any user is able to view the products and add products to their cart. Only users with an account are able to proceed in the checkout process.
             </p>
           </div>
           <div id = 'next-project-link-container'>

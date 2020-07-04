@@ -14,14 +14,14 @@ const DaisysWineShop = () => {
       <section className = 'project-details-container'>
         <div>
           <div className = 'details'>
-            <h1>Daisy&apos;s Wine Shop</h1>
+            <h1>Sansumg: Solve For Tomorrow</h1>
             <div>
               <div>
-                <div>
+                <div className = 'tech-details'>
                   <h2>Technologies</h2>
-                  <p id = 'tech-details'>React.js, Redux.js, Node.js, Express.js, Node.js, PSQL, Sequelize and other technologies.</p>
+                  <p>React,CSS</p>
                 </div>
-                <div>
+                <div className= 'tech-details'>
                   <h2>Links</h2>
                   <a href= "#" target= "blank">Github</a>
                   <a href= "#" target= "blank">Site</a>
@@ -29,13 +29,7 @@ const DaisysWineShop = () => {
               </div>
               <div>
                 <div>
-                  <p>Daisy’s Wine shop is an e-commerce site I worked on at Grace Hopper. I used react.js in conjunction with redux.js to both create components that display, add, edit, and delete our products while communicating to our server to appropriately update the database.</p>
-                  <p>
-                  I created an account management portal that included Google Oath authentication.
-                  </p>
-                  <p>
-                  In addition to user-facing account management, I created a page for admins to manage their online wine store. Admins could view users and add/edit/remove wines in their store.
-                  </p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
                 </div>
               </div>
             </div>
@@ -44,6 +38,7 @@ const DaisysWineShop = () => {
             <img src = {SectionImgOne} alt = 'Site img' />
           </div>
           <div className = 'details-2'>
+            <h2>Lorem ipsum dolor sit</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>

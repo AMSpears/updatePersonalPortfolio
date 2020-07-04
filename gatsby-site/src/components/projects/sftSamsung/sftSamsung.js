@@ -20,17 +20,17 @@ const SFTSamsung = () => {
               <div>
                 <div className = 'tech-details'>
                   <h2>Technologies</h2>
-                  <p>React,CSS</p>
+                  <p>Javacript</p>
                 </div>
                 <div className= 'tech-details'>
                   <h2>Links</h2>
-                  <a href= "#" target= "blank">Github</a>
-                  <a href= "#" target= "blank">Site</a>
+                  <a href= "https://www.samsung.com/us/solvefortomorrow/" target= "blank">Site</a>
                 </div>
               </div>
               <div>
                 <div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
+                  <p>Samsung runs an annual STEM contest called Solve For Tomorrow. At R/GA, I had the opportunity to work on their website to inspire interest in the STEM fields.</p>
+                  <p>For each new phase of this campaign, I made updates in collaboration with other engineers, designers, and QA engineers</p>
                 </div>
               </div>
             </div>
@@ -38,11 +38,7 @@ const SFTSamsung = () => {
           <div className = 'project-img'>
             <img src = {SectionImgOne} alt = 'Site img' />
           </div>
-          <div className = 'details-2'>
-            <h2>Lorem ipsum dolor sit</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-          </div>
+
           <div id = 'next-project-link-container'>
             <h3>Next Project</h3>
             <Link to= '/pentimento'> Pentimento</Link>

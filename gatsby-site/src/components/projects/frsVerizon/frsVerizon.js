@@ -40,7 +40,7 @@ const FrsVerizon = () => {
           </div>
           <div id = 'next-project-link-container'>
             <h3>Next Project</h3>
-            <Link to= '/sft-sansumg'> Sansumg: Solve For Tomorrow </Link>
+            <Link to= '/sft-sansumg'> Samsung: Solve For Tomorrow </Link>
           </div>
         </div>
       </section>

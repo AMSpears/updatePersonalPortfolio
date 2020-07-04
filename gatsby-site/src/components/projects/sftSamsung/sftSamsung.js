@@ -15,7 +15,7 @@ const SFTSamsung = () => {
       <section className = 'project-details-container'>
         <div>
           <div className = 'details'>
-            <h1>Sansumg: Solve For Tomorrow</h1>
+            <h1>Samsung: Solve For Tomorrow</h1>
             <div>
               <div>
                 <div className = 'tech-details'>

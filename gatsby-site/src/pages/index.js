@@ -41,12 +41,13 @@ const HomePage = () => {
         mainContainer.current.style.backgroundImage = 'linear-gradient(180deg, #ffffff 50%, #F76259 100%)'
       }
 
-      if (scrollTop > articlesContainer.current.getBoundingClientRect().top) {
-        mainContainer.current.style.backgroundImage = 'linear-gradient(180deg, #ffffff 80%, #59F7E5 100%)'
-      }
+      // Temporarily disable until additional articles are added to the section
+      // if (scrollTop > articlesContainer.current.getBoundingClientRect().top) {
+      //   mainContainer.current.style.backgroundImage = 'linear-gradient(180deg, #ffffff 50%, #59F7E5 100%)'
+      // }
 
       if (scrollTop > otherProjectsContainer.current.getBoundingClientRect().top) {
-        mainContainer.current.style.backgroundImage = 'linear-gradient(180deg, #ffffff 80%, #DF5FFA 100%)'
+        mainContainer.current.style.backgroundImage = 'linear-gradient(180deg, #ffffff 50%, #DF5FFA 100%)'
       }
 
       setScrollTop(e.target.documentElement.scrollTop)

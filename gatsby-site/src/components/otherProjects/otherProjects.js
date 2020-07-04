@@ -17,35 +17,35 @@ const OtherProjects = () => {
             <Link to = '/food-search'>
               <img className = 'project-img even' src = {FoodSearch} alt = 'Food Search'/>
               <h2>Food Search </h2>
-              <p>React, CSS</p>
+              <p>React, Node, express, Yelp API</p>
             </Link>
           </div>
           <div className = 'other-projects'>
             <Link to = '/shopping-list'>
               <img  className = 'project-img even' src = {ShoppingList} alt = 'Shopping List'/>
               <h2>Shopping List</h2>
-              <p>React, CSS</p>
+              <p>Ruby on Rails</p>
             </Link>
           </div>
           <div className = 'other-projects'>
             <Link to = '/weather-app'>
               <img className = 'project-img odd' src = {WeatherApp} alt = 'Weather App'/>
               <h2>Weather App</h2>
-              <p>React, CSS</p>
+              <p>React, Open Weather Map API</p>
             </Link>
           </div>
           <div className = 'other-projects'>
             <Link to = '/trivia-game'>
               <img className = 'project-img odd' src = {TriviaGame} alt = 'Trivia Game'/>
               <h2>Trivia Game</h2>
-              <p>React, CSS</p>
+              <p>JavaScript, jQuery</p>
             </Link>
           </div>
           <div className = 'other-projects'>
             <Link to = '/home-finder'>
               <img className = 'project-img odd' src = {HomeFinder} alt = 'Home Finder' />
               <h2>Home Finder</h2>
-              <p>React, CSS</p>
+              <p>React, Node, Express, MongoDB</p>
             </Link>
           </div>
         </div>

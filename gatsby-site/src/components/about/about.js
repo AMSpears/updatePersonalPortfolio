@@ -7,7 +7,8 @@ const About = () => {
       <div>
         <div id = 'header-container'><h1>About Me</h1></div>
         <div id = 'description-container'>
-          <p> I&apos;ve worked with R/GA on projects for Verizon and Samsung. My Frontend experience include    React, Preact and Gatsby. My backend experience includes Node, Express, Postgress and more. I&apos;m currently looking for an amazing position with a great company in NYC.</p>
+          <p> I&apos;ve worked with R/GA on projects for Verizon and Samsung. My Frontend experience include React, Preact and Gatsby. My backend experience includes Node, Express, Sequelize, MongoDB and more. I&apos;m currently looking to join a company where I could apply the things I&apos;ve learned, be challenged, and create both beautiful and useful products.
+         </p>
         </div>
       </div>
     </div>

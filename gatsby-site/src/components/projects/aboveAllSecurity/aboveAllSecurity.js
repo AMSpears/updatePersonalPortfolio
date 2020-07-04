@@ -28,7 +28,9 @@ const AboveAllSecurity = () => {
               </div>
               <div>
                 <div>
-                  <p>Created and maintaining the company website for a Washington, DC based security firm. </p>
+                  <p>Created and maintaining the company website for a Washington, DC based security firm.</p>
+                  <p>
+                   This site allows for the client to communicate their services, as well as their current and future clients to be able to connect with them.</p>
                 </div>
               </div>
             </div>

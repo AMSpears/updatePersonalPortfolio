@@ -73,6 +73,20 @@
         @include content-font;
       }
     }
+    #next-project-link-container {
+      margin: 20px 0;
+
+      h3 {
+        font-size: 20px;
+        font-weight: 400;
+        @include header-font;
+      }
+      a {
+        text-decoration: none;
+        font-size: 24px;
+        @include content-font;
+      }
+    }
   }
 }
 
@@ -132,6 +146,16 @@
         }
         p {
           @include dk-content-font-size;
+        }
+      }
+      #next-project-link-container {
+        margin: 100px 0;
+
+        h3 {
+          font-size: 24px;
+        }
+        a {
+          font-size: 40px;
         }
       }
     }

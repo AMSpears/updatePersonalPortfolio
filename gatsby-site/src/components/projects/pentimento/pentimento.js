@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'gatsby'
 import HeaderImg from '../../../images/projects/pentimento/pentimento-header.jpg'
 import SectionImgOne from '../../../images/projects/pentimento/pentimento-section-1.jpg'
 import SectionImgTwo from '../../../images/projects/pentimento/pentimento-section-2.jpg'
@@ -45,6 +46,10 @@ const Pentimento = () => {
           </div>
           <div className = 'project-img'>
             <img src = {SectionImgTwo} alt = 'Site img' />
+          </div>
+          <div id = 'next-project-link-container'>
+            <h3>Next Project</h3>
+            <Link to= '/daisys-wine-shop'> Daisy&apos;s Wine Shop</Link>
           </div>
         </div>
       </section>

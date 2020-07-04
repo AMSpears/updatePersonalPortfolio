@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'gatsby'
 import HeaderImg from '../../../images/projects/sftSamsung/samsung-1.jpg'
 import SectionImgOne from '../../../images/projects/sftSamsung/samsung-3.jpg'
 
@@ -41,6 +42,10 @@ const SFTSamsung = () => {
             <h2>Lorem ipsum dolor sit</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
+          </div>
+          <div id = 'next-project-link-container'>
+            <h3>Next Project</h3>
+            <Link to= '/pentimento'> Pentimento</Link>
           </div>
         </div>
       </section>

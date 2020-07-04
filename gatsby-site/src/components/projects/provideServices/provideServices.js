@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'gatsby'
 import HeaderImg from '../../../images/projects/provideServices/provide-services-header.jpg'
 import SectionImgOne from '../../../images/projects/provideServices/provide-services-section-1.jpg'
 import SectionImgTwo from '../../../images/projects/provideServices/provide-services-section-2.jpg'
@@ -45,6 +46,9 @@ const ProvideServices = () => {
           </div>
           <div className = 'project-img'>
             <img src = {SectionImgTwo} alt = 'Site img' />
+          </div>
+          <div id = 'next-project-link-container'>
+            <Link to= '/above-all-security'> Previews project</Link>
           </div>
         </div>
       </section>

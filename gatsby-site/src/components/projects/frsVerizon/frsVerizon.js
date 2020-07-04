@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'gatsby'
 import HeaderImg from '../../../images/projects/frsVerizon/verizon-1.jpg'
 import SectionImgOne from '../../../images/projects/frsVerizon/verizon-2.jpg'
 import SectionImgTwo from '../../../images/projects/frsVerizon/verizon-3.jpg'
@@ -46,6 +47,10 @@ const FrsVerizon = () => {
           <div className = 'project-img'>
             <img src = {SectionImgTwo} alt = 'Site img' />
           </div>
+          <div id = 'next-project-link-container'>
+            <h3>Next Project</h3>
+            <Link to= '/sft-sansumg'> Sansumg: Solve For Tomorrow </Link>
+          </div>
         </div>
       </section>
     </div>
@@ -53,6 +58,3 @@ const FrsVerizon = () => {
 }
 
 export default FrsVerizon
-// <div className = 'project-img'>
-//           <img src = {SectionImgTwo} alt = 'Site img' />
-//         </div>

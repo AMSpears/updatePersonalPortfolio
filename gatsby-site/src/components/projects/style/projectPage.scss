@@ -1,3 +1,5 @@
+@import '../../globalStyle/font';
+
 .header-placeholder {
   img {
     width: 100vw;
@@ -5,21 +7,21 @@
 }
 
 .project-details-container {
-  display: flex;
-  justify-content: center;
-  padding: 0 23px;
+  @include mb-section-spacing;
+
   div {
     .details {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      padding-bottom: 20px;
 
       h1 {
-        text-align: center;
-        font-size: 48px;
-        font-family: 'Montserrat', sans-serif;
-        line-height: 59px;
-        margin-bottom: 24px;
+        text-align: left;
+        @include header-font;
+        @include mb-header-font-size;
+      }
+
+      p {
+        @include content-font;
+        @include mb-content-font-size;
       }
 
       div {
@@ -30,115 +32,106 @@
         div {
           display: flex;
           flex-direction: column;
-          margin: 0 0 24px 0;
 
-          div {
+          .tech-details {
+            margin-bottom: 20px;
             h2 {
-              font-size: 24px;
-              line-height:29px;
-              font-family: 'Montserrat', sans-serif;
+              @include header-font;
+              @include mb-content-font-size;
             }
-           #tech-details {
-             max-width: 200px;
-           }
-          }
-
-        }
-
-        div:nth-child(2) {
-
-          p {
-            max-width: 680px;
-            font-size: 16px;
-            line-height: 24px;
-            font-family: 'Montserrat', sans-serif;
+            p, a {
+              @include content-font;
+            }
+            a {
+              padding: 5px 0;
+            }
           }
         }
+      }
+    }
+
+    .project-img {
+      img {
+        width: 100%;
+        object-fit: cover;
       }
     }
 
     .details-2 {
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      margin: 48px 0;
+      padding-top: 20px;
 
       h2 {
-        font-size: 24px;
-        line-height: 28px;
-        max-width: 229px;
-        font-family: 'Montserrat', sans-serif;
+       @include mb-header-font-size;
+       @include header-font;
+
       }
 
       p {
-        max-width: 680px;
-        font-size: 16px;
-        line-height: 24px;
-        font-family: 'Montserrat', sans-serif;
+        @include mb-content-font-size;
+        @include content-font;
       }
     }
   }
 }
-@media only screen and (min-width: 1024px) {
+
+@media only screen and (min-width: 769px) {
   .project-details-container {
+    @include dk-section-spacing;
 
     div {
       .details {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 48px 0;
+        padding-bottom: 100px;
 
         h1 {
-          text-align: center;
-          margin-bottom: 32px;
-          font-size: 48px;
+          text-align: left;
+          @include dk-header-font-size;
         }
 
         div {
           display: flex;
           flex-direction: row;
-          justify-content:space-between;
+          justify-content: space-between;
 
           div {
             display: flex;
             flex-direction: column;
+             .tech-details {
+                margin-right: 70px;
+                margin-bottom: 0;
+               h2 {
+                 @include dk-content-font-size;
+               }
 
-            div {
+               p,
+               a {
+                 @include content-font;
+               }
 
-              h2 {
-                font-size: 24px;
-                line-height: 29px;
-                margin-bottom:32px;
-              }
-            }
+             }
           }
 
           div:nth-child(2) {
             p {
-              max-width: 680px;
-              font-size: 16px;
-              line-height: 24px;
+              @include content-font;
+              @include dk-content-font-size;
             }
           }
         }
       }
 
       .details-2 {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin: 48px 0;
+        padding-top: 100px;
 
         h2 {
-          font-size:24px;
-          line-height: 29px;
-          max-width: 229px;
+          @include dk-header-font-size;
+          margin-right: 80px;
         }
         p {
-          max-width: 680px;
-          font-size: 16px;
-          line-height: 24px;
+          @include dk-content-font-size;
         }
       }
     }

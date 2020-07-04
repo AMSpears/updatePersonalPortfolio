@@ -8,7 +8,7 @@ const Contact = () => {
     <div id = 'contact' className = 'contact-container'>
       { path === '/' ?
         <h1>Thanks for visiting</h1>
-        : <h1>Contact Me</h1>
+        : ''
       }
       <div className = 'contact-links-container'>
         <div className = 'contact-link'>

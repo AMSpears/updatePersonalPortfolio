@@ -17,11 +17,11 @@ const SFTSamsung = () => {
             <h1>Sansumg: Solve For Tomorrow</h1>
             <div>
               <div>
-                <div>
+                <div className = 'tech-details'>
                   <h2>Technologies</h2>
                   <p>React,CSS</p>
                 </div>
-                <div>
+                <div className= 'tech-details'>
                   <h2>Links</h2>
                   <a href= "#" target= "blank">Github</a>
                   <a href= "#" target= "blank">Site</a>
@@ -29,7 +29,6 @@ const SFTSamsung = () => {
               </div>
               <div>
                 <div>
-                  <h2>Lorem ipsum dolor sit amet</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
                 </div>
               </div>
@@ -39,7 +38,7 @@ const SFTSamsung = () => {
             <img src = {SectionImgOne} alt = 'Site img' />
           </div>
           <div className = 'details-2'>
-            <h2>Lorem ipsum dolor sit amet</h2>
+            <h2>Lorem ipsum dolor sit</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>

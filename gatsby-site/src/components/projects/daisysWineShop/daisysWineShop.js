@@ -29,7 +29,6 @@ const DaisysWineShop = () => {
               </div>
               <div>
                 <div>
-                  <h2>Lorem ipsum dolor sit amet</h2>
                   <p>Daisy’s Wine shop is an e-commerce site I worked on at Grace Hopper. I used react.js in conjunction with redux.js to both create components that display, add, edit, and delete our products while communicating to our server to appropriately update the database.</p>
                   <p>
                   I created an account management portal that included Google Oath authentication.
@@ -45,7 +44,6 @@ const DaisysWineShop = () => {
             <img src = {SectionImgOne} alt = 'Site img' />
           </div>
           <div className = 'details-2'>
-            <h2>Lorem ipsum dolor sit amet</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>

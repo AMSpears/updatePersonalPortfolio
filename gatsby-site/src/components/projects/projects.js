@@ -19,7 +19,7 @@ const Projects = () => {
               <Link to = '/frs-verizon'>
                 <img src = {FRS_Project} alt = 'First Responders - Verizon'/>
                 <h2>Verizon: First Responders </h2>
-                <p>React and more</p>
+                <p>React</p>
               </Link>
             </div>
             <div className = 'project' id = 'second-column'>

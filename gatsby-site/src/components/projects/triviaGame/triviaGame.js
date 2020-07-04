@@ -13,33 +13,28 @@ const TriviaGame = () => {
       <section className = 'project-details-container'>
         <div>
           <div className = 'details'>
-            <h1>Sansumg: Solve For Tomorrow</h1>
+            <h1>Trivia Game</h1>
             <div>
               <div>
                 <div className = 'tech-details'>
                   <h2>Technologies</h2>
-                  <p>React,CSS</p>
+                  <p>JQuery</p>
                 </div>
                 <div className= 'tech-details'>
                   <h2>Links</h2>
-                  <a href= "#" target= "blank">Github</a>
-                  <a href= "#" target= "blank">Site</a>
+                  <a href= "https://github.com/AMSpears/TriviaGame/" target= "blank">Github</a>
+                  <a href= "https://amspears.github.io/TriviaGame/" target= "blank">Site</a>
                 </div>
               </div>
               <div>
                 <div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
+                  <p>U.S. State Capitals is a trivia game I created while at General Assembly. For this project, I create a fun and interactive quiz that allows the user to test their knowledge of the state capitals within 50 seconds.</p>
                 </div>
               </div>
             </div>
           </div>
           <div className = 'project-img'>
             <img src = {SectionImgOne} alt = 'Site img' />
-          </div>
-          <div className = 'details-2'>
-            <h2>Lorem ipsum dolor sit</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
           </div>
         </div>
       </section>

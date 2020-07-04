@@ -34,20 +34,20 @@ const HomePage = () => {
     const onScroll = (e) => {
 
       if (scrollTop >= aboutContainer.current.getBoundingClientRect().top) {
-        mainContainer.current.style.backgroundImage = 'linear-gradient(180deg, #ffffff 50%, #5985F7 100%)'
+        mainContainer.current.style.backgroundImage = 'linear-gradient(10deg, rgba(89,133,247,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%)'
       }
 
       if (scrollTop > projectsContainer.current.getBoundingClientRect().top) {
-        mainContainer.current.style.backgroundImage = 'linear-gradient(180deg, #ffffff 50%, #F76259 100%)'
+        mainContainer.current.style.backgroundImage = 'linear-gradient(10deg, rgba(247,98,89,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%)'
       }
 
       // Temporarily disable until additional articles are added to the section
       // if (scrollTop > articlesContainer.current.getBoundingClientRect().top) {
-      //   mainContainer.current.style.backgroundImage = 'linear-gradient(180deg, #ffffff 50%, #59F7E5 100%)'
+      // mainContainer.current.style.backgroundImage = 'linear-gradient(10deg, rgba(140,210,162,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%)'
       // }
 
       if (scrollTop > otherProjectsContainer.current.getBoundingClientRect().top) {
-        mainContainer.current.style.backgroundImage = 'linear-gradient(180deg, #ffffff 50%, #DF5FFA 100%)'
+        mainContainer.current.style.backgroundImage = 'linear-gradient(10deg, rgba(140,210,162,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%)'
       }
 
       setScrollTop(e.target.documentElement.scrollTop)

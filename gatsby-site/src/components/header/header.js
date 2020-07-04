@@ -60,6 +60,7 @@ class Header extends Component {
                   </div>
                   ) : (
                   <div>
+                    <Link to= '/'>Home</Link>
                     <a href={Resume} target = '_blank' rel='noreferrer'>Resume</a>
                     <a href='#contact'>Contact</a>
                   </div>

@@ -14,33 +14,28 @@ const ShoppingList = () => {
       <section className = 'project-details-container'>
         <div>
           <div className = 'details'>
-            <h1>Sansumg: Solve For Tomorrow</h1>
+            <h1>Shopping List</h1>
             <div>
               <div>
                 <div className = 'tech-details'>
                   <h2>Technologies</h2>
-                  <p>React,CSS</p>
+                  <p>Ruby on Rails</p>
                 </div>
                 <div className= 'tech-details'>
                   <h2>Links</h2>
-                  <a href= "#" target= "blank">Github</a>
-                  <a href= "#" target= "blank">Site</a>
+                  <a href= "https://github.com/AMSpears/shoppinglist" target= "blank">Github</a>
+                  <a href= "https://as-shopping-list.herokuapp.com/users/sign_in" target= "blank">Site</a>
                 </div>
               </div>
               <div>
                 <div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
+                  <p>Shopping List is one of the first projects I worked on while at General Assembly. For this project, I collaborated with a UX/UI designer to create a fun and interactive shopping list app where the user can create personalized shopping lists.</p>
                 </div>
               </div>
             </div>
           </div>
           <div className = 'project-img'>
             <img src = {SectionImgOne} alt = 'Site img' />
-          </div>
-          <div className = 'details-2'>
-            <h2>Lorem ipsum dolor sit</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
           </div>
         </div>
       </section>

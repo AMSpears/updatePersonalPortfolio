@@ -16,33 +16,29 @@ const ProvideServices = () => {
       <section className = 'project-details-container'>
         <div>
           <div className = 'details'>
-            <h1>Sansumg: Solve For Tomorrow</h1>
+            <h1>Provide Services</h1>
             <div>
               <div>
                 <div className = 'tech-details'>
                   <h2>Technologies</h2>
-                  <p>React,CSS</p>
+                  <p>React, Node, Express, Nodemailer</p>
                 </div>
                 <div className= 'tech-details'>
                   <h2>Links</h2>
-                  <a href= "#" target= "blank">Github</a>
-                  <a href= "#" target= "blank">Site</a>
+                  <a href= "https://github.com/AMSpears/provide-services" target= "blank">Github</a>
+                  <a href= "https://provide.services/" target= "blank">Site</a>
                 </div>
               </div>
               <div>
                 <div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur</p>
+                  <p>Provide Technologies is a cryptocurrency startup. I worked with Provide to create a responsive website that would communicate their vision and value to customers.</p>
+                  <p>Working on this site was rewarding. The startup was under a tight deadline to launch their initial website so I needed to deliver a responsive website fast. I got it done faster than I expected :)</p>
                 </div>
               </div>
             </div>
           </div>
           <div className = 'project-img'>
             <img src = {SectionImgOne} alt = 'Site img' />
-          </div>
-          <div className = 'details-2'>
-            <h2>Lorem ipsum dolor sit</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
           </div>
           <div className = 'project-img'>
             <img src = {SectionImgTwo} alt = 'Site img' />

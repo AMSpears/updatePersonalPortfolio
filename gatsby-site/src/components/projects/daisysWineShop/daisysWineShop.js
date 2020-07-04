@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'gatsby'
 import HeaderImg from '../../../images/projects/daisyswineshop/daisys-wine-shop-header.jpg'
 import SectionImgOne from '../../../images/projects/daisyswineshop/daisys-wine-shop-section.jpg'
+import SectionImgTwo from '../../../images/projects/daisyswineshop/daisys-wine-shop-003.jpg'
 
 import '../style/projectPage.scss'
 
@@ -20,7 +21,7 @@ const DaisysWineShop = () => {
               <div>
                 <div className = 'tech-details'>
                   <h2>Technologies</h2>
-                  <p id ='tech-list'>React, Redux, Node, Express, Node, Sequelize</p>
+                  <p id ='tech-list'>React,Redux, Node, Express, Sequelize</p>
                 </div>
                 <div className= 'tech-details'>
                   <h2>Links</h2>
@@ -44,6 +45,9 @@ const DaisysWineShop = () => {
             <h2>How does it work?</h2>
             <p>Any user is able to view the products and add products to their cart. Only users with an account are able to proceed in the checkout process.
             </p>
+          </div>
+          <div className = 'project-img'>
+            <img src = {SectionImgTwo} alt = 'Site img' />
           </div>
           <div id = 'next-project-link-container'>
             <h3>Next Project</h3>

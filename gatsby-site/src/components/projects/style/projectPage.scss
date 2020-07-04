@@ -109,14 +109,12 @@
             display: flex;
             flex-direction: column;
              .tech-details {
-                margin-right: 70px;
+                margin-right: 100px;
                 margin-bottom: 0;
                 h2 {
                   @include dk-content-font-size;
                 }
-                p {
-                  width: 300px;
-                }
+
                 p,
                 a {
                   @include content-font;
@@ -136,12 +134,11 @@
 
       .details-2 {
         flex-direction: row;
-        // justify-content: space-between;
         margin: 50px 0;
 
         h2 {
           @include dk-header-font-size;
-          margin-right: 80px;
+          margin-right:100px;
         }
         p {
           @include dk-content-font-size;

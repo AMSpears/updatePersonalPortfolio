@@ -24,7 +24,7 @@ const WeatherApp = () => {
                 <div className= 'tech-details'>
                   <h2>Links</h2>
                   <a href= "https://github.com/AMSpears/weatherapp" target= "blank">Github</a>
-                  <a href= "my-weather-personalized.surge.sh/" target= "blank">Site</a>
+                  <a href= "http://my-weather-personalized.surge.sh/" target= "blank">Site</a>
                 </div>
               </div>
               <div>

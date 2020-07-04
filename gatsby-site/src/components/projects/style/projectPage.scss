@@ -82,7 +82,7 @@
 
     div {
       .details {
-        padding-bottom: 100px;
+        margin-bottom: 100px;
 
         h1 {
           text-align: left;
@@ -124,7 +124,7 @@
       .details-2 {
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 100px;
+        margin: 100px 0;
 
         h2 {
           @include dk-header-font-size;

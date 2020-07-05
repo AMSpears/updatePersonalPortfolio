@@ -18,13 +18,10 @@ const homeFinder = () => {
             <div>
               <div>
                 <div className = 'tech-details'>
+                  <h2>Links</h2>
+                  <p><a href= "http://home-finder.surge.sh/" target= "blank">Live</a>, <a href= "https://github.com/AMSpears/home-app-frontend" target= "blank">Github</a></p>
                   <h2>Technologies</h2>
                   <p>React, Node, Express, MongoDB</p>
-                </div>
-                <div className= 'tech-details'>
-                  <h2>Links</h2>
-                  <a href= "https://github.com/AMSpears/home-app-frontend" target= "blank">Github</a>
-                  <a href= "http://home-finder.surge.sh/" target= "blank">Site</a>
                 </div>
               </div>
               <div>

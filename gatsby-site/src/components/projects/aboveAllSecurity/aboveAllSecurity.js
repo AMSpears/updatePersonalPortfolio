@@ -17,13 +17,11 @@ const AboveAllSecurity = () => {
             <h1>Above All Security</h1>
             <div>
               <div>
-                <div className = 'tech-details'>
-                  <h2>Technologies</h2>
-                  <p>React, Node, Express, Nodemaile</p>
-                </div>
                 <div className= 'tech-details'>
                   <h2>Links</h2>
-                  <a href= "http://above-all-security.com/" target= "blank">Site</a>
+                  <p><a href= "http://above-all-security.com/" target= "blank">Live</a></p>
+                  <h2>Technologies</h2>
+                  <p>React, Node, Express, Nodemailer</p>
                 </div>
               </div>
               <div>

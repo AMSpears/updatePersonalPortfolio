@@ -19,12 +19,10 @@ const SFTSamsung = () => {
             <div>
               <div>
                 <div className = 'tech-details'>
+                  <h2>Links</h2>
+                  <p><a href= "https://www.samsung.com/us/solvefortomorrow/" target= "blank">Live</a></p>
                   <h2>Technologies</h2>
                   <p>Javacript</p>
-                </div>
-                <div className= 'tech-details'>
-                  <h2>Links</h2>
-                  <a href= "https://www.samsung.com/us/solvefortomorrow/" target= "blank">Site</a>
                 </div>
               </div>
               <div>

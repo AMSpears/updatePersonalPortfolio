@@ -18,13 +18,10 @@ const ShoppingList = () => {
             <div>
               <div>
                 <div className = 'tech-details'>
+                  <h2>Links</h2>
+                  <p> <a href= "https://as-shopping-list.herokuapp.com/users/sign_in" target= "blank">Live</a>, <a href= "https://github.com/AMSpears/shoppinglist" target= "blank">Github</a></p>
                   <h2>Technologies</h2>
                   <p>Ruby on Rails</p>
-                </div>
-                <div className= 'tech-details'>
-                  <h2>Links</h2>
-                  <a href= "https://github.com/AMSpears/shoppinglist" target= "blank">Github</a>
-                  <a href= "https://as-shopping-list.herokuapp.com/users/sign_in" target= "blank">Site</a>
                 </div>
               </div>
               <div>

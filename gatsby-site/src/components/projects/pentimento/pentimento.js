@@ -20,13 +20,12 @@ const Pentimento = () => {
             <div>
               <div>
                 <div className = 'tech-details'>
+                  <h2>Links</h2>
+                  <p>
+                   <a href= "https://pentimentostreet.herokuapp.com/" target= "blank">Live</a>, <a href= "https://github.com/Phantom-Blue/phantom-blue" target= "blank">Github</a>
+                  </p>
                   <h2>Technologies</h2>
                   <p>Mapbox, React, Redux, Node, Express, Sequelize</p>
-                </div>
-                <div className= 'tech-details'>
-                  <h2>Links</h2>
-                  <a href= "https://github.com/Phantom-Blue/phantom-blue" target= "blank">Github</a>
-                  <a href= "https://pentimentostreet.herokuapp.com/" target= "blank">Site</a>
                 </div>
               </div>
               <div>

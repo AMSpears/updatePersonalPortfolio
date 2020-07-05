@@ -17,13 +17,10 @@ const TriviaGame = () => {
             <div>
               <div>
                 <div className = 'tech-details'>
+                  <h2>Links</h2>
+                  <p><a href= "https://amspears.github.io/TriviaGame/" target= "blank">Live</a>, <a href= "https://github.com/AMSpears/TriviaGame/" target= "blank">Github</a></p>
                   <h2>Technologies</h2>
                   <p>JQuery</p>
-                </div>
-                <div className= 'tech-details'>
-                  <h2>Links</h2>
-                  <a href= "https://github.com/AMSpears/TriviaGame/" target= "blank">Github</a>
-                  <a href= "https://amspears.github.io/TriviaGame/" target= "blank">Site</a>
                 </div>
               </div>
               <div>

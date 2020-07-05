@@ -20,13 +20,10 @@ const ProvideServices = () => {
             <div>
               <div>
                 <div className = 'tech-details'>
+                  <h2>Links</h2>
+                  <p><a href= "https://provide.services/" target= "blank">Live</a>, <a href= "https://github.com/AMSpears/provide-services" target= "blank">Github</a></p>
                   <h2>Technologies</h2>
                   <p>React, Node, Express, Nodemailer</p>
-                </div>
-                <div className= 'tech-details'>
-                  <h2>Links</h2>
-                  <a href= "https://github.com/AMSpears/provide-services" target= "blank">Github</a>
-                  <a href= "https://provide.services/" target= "blank">Site</a>
                 </div>
               </div>
               <div>

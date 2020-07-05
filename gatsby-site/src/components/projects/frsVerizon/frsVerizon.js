@@ -27,13 +27,16 @@ const FrsVerizon = () => {
               <div>
                 <div>
                   <p>I never thought I’d be part of a Super Bowl commercial. While at R/GA I worked on an awesome website for Verizon that honored first responders.</p>
-                  <p>Verizon ran a series of commercials during the Super Bowl for people to show gratitude to first responders. I collaborated with other engineers, designers, and QA on this project.</p>
                 </div>
               </div>
             </div>
           </div>
           <div className = 'project-img'>
             <img src = {SectionImgOne} alt = 'Site img' />
+          </div>
+          <div className = 'details-2'>
+            <p>Verizon ran a series of commercials during the Super Bowl for people to show gratitude to first responders. I collaborated with other engineers, designers, and QA on this project.
+            </p>
           </div>
           <div className = 'project-img'>
             <img src = {SectionImgTwo} alt = 'Site img' />

@@ -30,7 +30,6 @@ const SFTSamsung = () => {
               <div>
                 <div>
                   <p>Samsung runs an annual STEM contest called Solve For Tomorrow. At R/GA, I had the opportunity to work on their website to inspire interest in the STEM fields.</p>
-                  <p>For each new phase of this campaign, I made updates in collaboration with other engineers, designers, and QA engineers</p>
                 </div>
               </div>
             </div>
@@ -38,7 +37,10 @@ const SFTSamsung = () => {
           <div className = 'project-img'>
             <img src = {SectionImgOne} alt = 'Site img' />
           </div>
-
+           <div className = 'details-2'>
+           <h2>Cross functional collaboration</h2>
+           <p>For each new phase of this campaign, I made updates in collaboration with other engineers, designers, and QA engineers.</p>
+          </div>
           <div id = 'next-project-link-container'>
             <h3>Next Project</h3>
             <Link to= '/pentimento'> Pentimento</Link>

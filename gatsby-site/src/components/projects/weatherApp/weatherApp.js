@@ -29,8 +29,7 @@ const WeatherApp = () => {
               </div>
               <div>
                 <div>
-                  <p>A personalized weather application.</p>
-                  <p>Developed this application querying real-time data from the Open Weather Map API to display the weather information of five cities. </p>
+                  <p>Developed this application querying real-time data from the Open Weather Map API to display the weather information of five cities</p>
                 </div>
               </div>
             </div>

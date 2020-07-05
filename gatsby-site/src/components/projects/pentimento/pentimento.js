@@ -32,7 +32,6 @@ const Pentimento = () => {
               <div>
                 <div>
                   <p>I get to see some of the world’s best art on the streets of the neighborhood in New York. I live near Bushwick, where street art thrives. Unfortunately, street art can be up for a moment and lost forever. I worked with a team a Grace Hopper to create a web app to capture and map the best street art around the world.</p>
-                  <p>I used Mapbox in conjunction with react.js to display all artworks on a map that is center in new york city coordinates. I additionally added the view as a list functionality and gave users the ability to edit their artwork postings by updating or removing the posting.</p>
                 </div>
               </div>
             </div>
@@ -40,17 +39,16 @@ const Pentimento = () => {
           <div className = 'project-img'>
             <img src = {SectionImgOne} alt = 'Site img' />
           </div>
-          <div className = 'details-2'>
-            <div><h2>How it works</h2></div>
-            <div>
-              <p> &#8212; Any user can see and search for artwork near them. </p>
-              <p>&#8212; All users are able to create an account. </p>
-              <p> &#8212; If they have an account they can add a posting of artwork. </p>
-              <p> &#8212; They are also able to update their own artwork. </p>
-            </div>
+           <div className = 'details-2'>
+            <h2>Account management</h2>
+            <p>Creating an account allows users to take photos and upload them to Pentimento. Those photos are then displayed on a map for Pentimento visitors to browse. Users can also edit/delete their uploaded photos.</p>
           </div>
           <div className = 'project-img'>
             <img src = {SectionImgTwo} alt = 'Site img' />
+          </div>
+          <div className = 'details-2'>
+            <h2>Mapping your favorite artwork</h2>
+            <p>I used Mapbox in conjunction with React.js to display all artworks on a map that is center in New York City coordinates. I added the view as a list functionality and gave users the ability to edit their artwork postings by updating or removing the posting.</p>
           </div>
           <div id = 'next-project-link-container'>
             <h3>Next Project</h3>

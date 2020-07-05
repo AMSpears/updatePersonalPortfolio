@@ -29,7 +29,7 @@ const homeFinder = () => {
               </div>
               <div>
                 <div>
-                  <p>Home Finder was a project I worked on with a team at General Assembly. For this project, we wanted to explore databases and search. We created a database where realtors could add/store/edit profiles of homes.</p>
+                  <p>Home Finder was a project I worked on with a team at General Assembly. For this project, we wanted to explore databases and search. We created a database where realtors could add/store/edit profiles of homes. Then users can browse homes listed in the database.</p>
                 </div>
               </div>
             </div>

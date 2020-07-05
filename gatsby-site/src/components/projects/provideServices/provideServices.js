@@ -32,13 +32,16 @@ const ProvideServices = () => {
               <div>
                 <div>
                   <p>Provide Technologies is a cryptocurrency startup. I worked with Provide to create a responsive website that would communicate their vision and value to customers.</p>
-                  <p>Working on this site was rewarding. The startup was under a tight deadline to launch their initial website so I needed to deliver a responsive website fast. I got it done faster than I expected :)</p>
                 </div>
               </div>
             </div>
           </div>
           <div className = 'project-img'>
             <img src = {SectionImgOne} alt = 'Site img' />
+          </div>
+          <div className = 'details-2'>
+           <h2>Rapid development</h2>
+           <p>Provide has updated their site a few years ago.  You can view a full mockup of the once page site I created below. Working on this site was rewarding. The startup was under a tight deadline to launch their initial website so I needed to deliver a responsive website fast. I got it done faster than I expected. :)</p>
           </div>
           <div className = 'project-img'>
             <img src = {SectionImgTwo} alt = 'Site img' />

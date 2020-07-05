@@ -28,7 +28,7 @@ const TriviaGame = () => {
               </div>
               <div>
                 <div>
-                  <p>U.S. State Capitals is a trivia game I created while at General Assembly. For this project, I create a fun and interactive quiz that allows the user to test their knowledge of the state capitals within 50 seconds.</p>
+                  <p>Test your knowledge of state capitals with this fun quiz I designed and developed! This timed quiz presents users with states and ask them what the capital is. Scores are displayed once the quiz is over. This was one of the first coding projects I developed in my engineering journey.</p>
                 </div>
               </div>
             </div>

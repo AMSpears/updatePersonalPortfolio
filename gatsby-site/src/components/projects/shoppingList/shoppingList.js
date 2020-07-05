@@ -29,7 +29,7 @@ const ShoppingList = () => {
               </div>
               <div>
                 <div>
-                  <p>Shopping List is one of the first projects I worked on while at General Assembly. For this project, I collaborated with a UX/UI designer to create a fun and interactive shopping list app where the user can create personalized shopping lists.</p>
+                  <p>This shopping list was one of my first projects I created a few years ago. I worked closely with a UX designer to create a fun and interactive shopping list app. Users can add/delete/update a list of anything.</p>
                 </div>
               </div>
             </div>

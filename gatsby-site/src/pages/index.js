@@ -32,22 +32,23 @@ const HomePage = () => {
 
   useEffect( () => {
     const onScroll = (e) => {
+      // '#EEA4F9', '#F7D6AC', '#E4FCCC', '#A7D7FA'
 
       if (scrollTop >= aboutContainer.current.getBoundingClientRect().top) {
-        mainContainer.current.style.backgroundImage = 'linear-gradient(10deg, rgba(89,133,247,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%)'
+        mainContainer.current.style.backgroundImage = 'linear-gradient(10deg, rgba(238, 164, 249,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%)'
       }
 
       if (scrollTop > projectsContainer.current.getBoundingClientRect().top) {
-        mainContainer.current.style.backgroundImage = 'linear-gradient(10deg, rgba(247,98,89,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%)'
+        mainContainer.current.style.backgroundImage = 'linear-gradient(10deg, rgba(247, 214, 172,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%)'
       }
 
       // Temporarily disable until additional articles are added to the section
       // if (scrollTop > articlesContainer.current.getBoundingClientRect().top) {
-      // mainContainer.current.style.backgroundImage = 'linear-gradient(10deg, rgba(140,210,162,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%)'
+      // mainContainer.current.style.backgroundImage = 'linear-gradient(10deg, rgba(167, 215, 250,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%)'
       // }
 
       if (scrollTop > otherProjectsContainer.current.getBoundingClientRect().top) {
-        mainContainer.current.style.backgroundImage = 'linear-gradient(10deg, rgba(140,210,162,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%)'
+        mainContainer.current.style.backgroundImage = 'linear-gradient(10deg, rgba(228, 252, 204,1) 0%, rgba(255,255,255,1) 70%, rgba(255,255,255,1) 100%)'
       }
 
       setScrollTop(e.target.documentElement.scrollTop)

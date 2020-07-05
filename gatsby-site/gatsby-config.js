@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Angie Spears`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `I’m Angie Spears, Grace Hopper alum and full-stack developer based in New York City.`,
     author: `Angie Spears`,
+    image: `src/images/tempBioPic.jpg`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

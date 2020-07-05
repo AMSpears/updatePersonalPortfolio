@@ -49,11 +49,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: `www.angiespears.com`,
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `I’m Angie Spears, Grace Hopper alum and full-stack developer based in New York City.`,
         },
         {
           name: `twitter:creator`,
@@ -61,12 +61,12 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: `AngieSpears_`,
         },
         {
           name: `twitter:description`,
           content: metaDescription,
-        },
+        }
       ].concat(meta)}
     />
   )
@@ -82,7 +82,7 @@ SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
 }
 
 export default SEO

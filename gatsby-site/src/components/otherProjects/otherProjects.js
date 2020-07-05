@@ -1,13 +1,17 @@
 import React from 'react'
 import {Link} from 'gatsby'
 import './otherProjects.scss'
-import FoodSearch from '../../images/projects/food-search-tb.jpg'
-import ShoppingList from '../../images/projects/shopping-list-2.jpg'
+import FoodSearchDK from '../../images/projects/food-search-tb.jpg'
+import ShoppingListDK from '../../images/projects/shopping-list-tb.jpg'
+import FoodSearchMB from '../../images/projects/food-search-tb-mb.jpg'
+import ShoppingListMB from '../../images/projects/shopping-list-tb-mb.jpg'
+
 import HomeFinder from '../../images/projects/real-estate-tb.jpg'
 import TriviaGame from '../../images/projects/trivia-game.jpg'
 import WeatherApp from '../../images/projects/weather-app-tb.jpg'
 
 const OtherProjects = () => {
+
   return (
     <div  id = 'other-projects' className = 'other-projects-section-container'>
       <div>
@@ -15,14 +19,14 @@ const OtherProjects = () => {
         <div className = 'other-projects-container'>
           <div className = 'other-projects'>
             <Link to = '/food-search'>
-              <img className = 'project-img even' src = {FoodSearch} alt = 'Food Search'/>
+              <img className = 'project-img even' src = {window.innerHeight > 768 ? FoodSearchDK : FoodSearchMB} alt = 'Food Search'/>
               <h2>Food Search </h2>
               <p>React, Node, express, Yelp API</p>
             </Link>
           </div>
           <div className = 'other-projects'>
             <Link to = '/shopping-list'>
-              <img  className = 'project-img even' src = {ShoppingList} alt = 'Shopping List'/>
+              <img  className = 'project-img even' src = {window.innerHeight > 768 ? ShoppingListDK : ShoppingListMB} alt = 'Shopping List'/>
               <h2>Shopping List</h2>
               <p>Ruby on Rails</p>
             </Link>

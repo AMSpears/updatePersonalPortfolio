@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, image,url }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -18,7 +18,9 @@ function SEO({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
-            author
+            author,
+            image,
+            url
           }
         }
       }
@@ -52,6 +54,14 @@ function SEO({ description, lang, meta, title }) {
           content: `www.angiespears.com`,
         },
         {
+          property: `og:image`,
+          content: image
+        },
+        {
+          property:`og:url`,
+          content: url
+        },
+        {
           name: `twitter:card`,
           content: `I’m Angie Spears, Grace Hopper alum and full-stack developer based in New York City.`,
         },
@@ -82,7 +92,9 @@ SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  image: PropTypes.string,
+  url: PropTypes.string,
 }
 
 export default SEO

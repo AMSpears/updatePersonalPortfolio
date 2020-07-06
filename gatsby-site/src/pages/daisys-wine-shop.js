@@ -1,8 +1,7 @@
 import React from "react"
 import Layout from "../components/layout/layout.js"
 import SEO from "../components/seo"
-import loadable from '@loadable/component'
-const DaisysWineShopContent = loadable(() => import("../components/projects/daisysWineShop/daisysWineShop"))
+import DaisysWineShopContent from "../components/projects/daisysWineShop/daisysWineShop"
 
 const DaisysWineShop = () => (
   <Layout>

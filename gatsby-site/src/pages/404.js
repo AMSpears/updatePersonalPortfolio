@@ -1,8 +1,7 @@
 import React from "react"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
-import loadable from '@loadable/component'
-const ErrorPage = loadable(() => import('../components/404/ErrorPage'))
+import ErrorPage from '../components/404/ErrorPage'
 
 const NotFoundPage = () => (
   <Layout>

@@ -24,7 +24,7 @@ const FoodSearch = () => {
                     <a href= "www.food-searches.surge.sh/" target= "blank">Live</a>, <a href= "https://github.com/AMSpears/FoodSearch-Frontend" target= "blank">Github</a>
                   </p>
                   <h2>Technologies</h2>
-                  <p>Yelp API, React, Node, Express</p>
+                  <p>Yelp API, React.js, Node.js, Express.js</p>
                 </div>
               </div>
               <div>

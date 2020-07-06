@@ -1,13 +1,13 @@
 import React from "react"
-import SFTSansumgContent from '../components/projects/sftSamsung/sftSamsung'
+import SFTsamsungContent from '../components/projects/sftSamsung/sftSamsung'
 import Layout from "../components/layout/layout.js"
 import SEO from "../components/seo"
 
-const SFTSansumg = () => (
+const SFTsamsung = () => (
   <Layout>
-    <SEO title="SFT Sansumg" />
-    <SFTSansumgContent/>
+    <SEO title="SFT samsung" />
+    <SFTsamsungContent/>
   </Layout>
 )
 
-export default SFTSansumg
+export default SFTsamsung

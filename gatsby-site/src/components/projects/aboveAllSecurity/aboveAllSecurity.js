@@ -21,7 +21,7 @@ const AboveAllSecurity = () => {
                   <h2>Links</h2>
                   <p><a href= "http://above-all-security.com/" target= "blank">Live</a></p>
                   <h2>Technologies</h2>
-                  <p>React, Node, Express, Nodemailer</p>
+                  <p>React.js, Node.js, Express.js, Nodemailer</p>
                 </div>
               </div>
               <div>

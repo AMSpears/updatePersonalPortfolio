@@ -24,7 +24,7 @@ const DaisysWineShop = () => {
                   <p><a href= "https://daisys-wine-shop.herokuapp.com/" target= "blank">Live</a>, <a href= "https://github.com/grace-shopper-daisys-dominators/daisys-dominators" target= "blank">Github</a></p>
 
                   <h2>Technologies</h2>
-                  <p id ='tech-list'>React,Redux, Node, Express, Sequelize</p>
+                  <p id ='tech-list'>React.js, Redux.js, Node.js, Express.js, Sequelize</p>
                 </div>
               </div>
               <div>

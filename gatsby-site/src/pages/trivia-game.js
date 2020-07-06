@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const TriviaGame = () => (
   <Layout>
-    <SEO title="SFT Sansumg" />
+    <SEO title="SFT samsung" />
     <TriviaGameContent/>
   </Layout>
 )

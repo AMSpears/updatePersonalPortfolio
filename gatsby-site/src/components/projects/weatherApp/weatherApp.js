@@ -23,7 +23,7 @@ const WeatherApp = () => {
                   <p> <a href= "http://my-weather-personalized.surge.sh/" target= "blank">Live</a>, <a href= "https://github.com/AMSpears/weatherapp" target= "blank">Github</a>
                   </p>
                   <h2>Technologies</h2>
-                  <p>Open Weather Map API, React</p>
+                  <p>Open Weather Map API, React.js</p>
                 </div>
               </div>
               <div>

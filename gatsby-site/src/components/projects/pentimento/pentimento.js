@@ -25,7 +25,7 @@ const Pentimento = () => {
                    <a href= "https://pentimentostreet.herokuapp.com/" target= "blank">Live</a>, <a href= "https://github.com/Phantom-Blue/phantom-blue" target= "blank">Github</a>
                   </p>
                   <h2>Technologies</h2>
-                  <p>Mapbox, React, Redux, Node, Express, Sequelize</p>
+                  <p>Mapbox, React.js, Redux.js, Node.js, Express.js, Sequelize</p>
                 </div>
               </div>
               <div>

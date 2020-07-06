@@ -31,8 +31,6 @@ const HomePage = () => {
   const [scrollTop, setScrollTop] = useState(0)
 
   useEffect( () => {
-   typeof window !== 'undefined' ? window  : ''
-
     const onScroll = (e) => {
       // '#EEA4F9', '#F7D6AC', '#E4FCCC', '#A7D7FA'
 

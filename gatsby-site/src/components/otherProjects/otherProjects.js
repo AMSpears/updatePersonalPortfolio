@@ -11,7 +11,7 @@ import TriviaGame from '../../images/projects/trivia-game.jpg'
 import WeatherApp from '../../images/projects/weather-app-tb.jpg'
 
 const OtherProjects = () => {
-  typeof window !== 'undefined' ? window.innerWidth : ''
+  const innerWidth  = window.innerWidth
   return (
     <div  id = 'other-projects' className = 'other-projects-section-container'>
       <div>
@@ -19,14 +19,14 @@ const OtherProjects = () => {
         <div className = 'other-projects-container'>
           <div className = 'other-projects'>
             <Link to = '/food-search'>
-              <img className = 'project-img even' src = {window.innerWidth > 768 ? FoodSearchDK : FoodSearchMB} alt = 'Food Search'/>
+              <img className = 'project-img even' src = {innerWidth > 768 ? FoodSearchDK : FoodSearchMB} alt = 'Food Search'/>
               <h2>Food Search </h2>
               <p>React, Node, express, Yelp API</p>
             </Link>
           </div>
           <div className = 'other-projects'>
             <Link to = '/shopping-list'>
-              <img  className = 'project-img even' src = {window.innerWidth > 768 ? ShoppingListDK : ShoppingListMB} alt = 'Shopping List'/>
+              <img  className = 'project-img even' src = {innerWidth > 768 ? ShoppingListDK : ShoppingListMB} alt = 'Shopping List'/>
               <h2>Shopping List</h2>
               <p>Ruby on Rails</p>
             </Link>

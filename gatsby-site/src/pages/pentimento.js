@@ -1,7 +1,8 @@
 import React from "react"
-import PentimentoContent from '../components/projects/pentimento/pentimento'
 import Layout from "../components/layout/layout.js"
 import SEO from "../components/seo"
+import loadable from '@loadable/component'
+const PentimentoContent = loadable(() => import('../components/projects/pentimento/pentimento'))
 
 const Pentimento = () => (
   <Layout>

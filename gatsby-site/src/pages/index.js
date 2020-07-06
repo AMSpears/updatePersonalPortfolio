@@ -1,11 +1,12 @@
 import React, {useEffect, useState, useRef} from "react"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
-import Intro from '../components/about/intro'
-import About from '../components/about/about'
-import Projects from '../components/projects/projects.js'
-import Articles from '../components/articles/articles'
-import OtherProjects from '../components/otherProjects/otherProjects'
+import loadable from '@loadable/component'
+const Intro = loadable(() => import('../components/about/intro'))
+const About = loadable(() => import('../components/about/about'))
+const Projects = loadable(() => import('../components/projects/projects'))
+const Articles = loadable(() => import('../components/articles/articles'))
+const OtherProjects = loadable(() => import('../components/otherProjects/otherProjects'))
 
 const mainSectionStyle = {
   margin: '0',

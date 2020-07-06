@@ -7,11 +7,11 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import loadable from '@loadable/component'
 import { useStaticQuery, graphql } from "gatsby"
-
-import Header from "../header/header"
 import Contact from "../contact/contact"
 import "./layout.css"
+const Header = loadable(() => import('../header/header'))
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`

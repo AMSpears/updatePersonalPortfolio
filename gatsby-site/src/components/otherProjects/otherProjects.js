@@ -21,7 +21,7 @@ const OtherProjects = () => {
             <Link to = '/food-search'>
               <img className = 'project-img even' src = {innerWidth > 768 ? FoodSearchDK : FoodSearchMB} alt = 'Food Search'/>
               <h2>Food Search </h2>
-              <p>React, Node, express, Yelp API</p>
+              <p>React.js, Node.js, Express.js, Yelp API</p>
             </Link>
           </div>
           <div className = 'other-projects'>
@@ -35,21 +35,21 @@ const OtherProjects = () => {
             <Link to = '/weather-app'>
               <img className = 'project-img odd' src = {WeatherApp} alt = 'Weather App'/>
               <h2>Weather App</h2>
-              <p>React, Open Weather Map API</p>
+              <p>React.js, Open Weather Map API</p>
             </Link>
           </div>
           <div className = 'other-projects'>
             <Link to = '/trivia-game'>
               <img className = 'project-img odd' src = {TriviaGame} alt = 'Trivia Game'/>
               <h2>Trivia Game</h2>
-              <p>JavaScript, jQuery</p>
+              <p>jQuery</p>
             </Link>
           </div>
           <div className = 'other-projects'>
             <Link to = '/home-finder'>
               <img className = 'project-img odd' src = {HomeFinder} alt = 'Home Finder' />
               <h2>Home Finder</h2>
-              <p>React, Node, Express, MongoDB</p>
+              <p>React.js, Node.js, Express.js, MongoDB</p>
             </Link>
           </div>
         </div>

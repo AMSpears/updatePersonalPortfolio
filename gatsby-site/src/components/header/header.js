@@ -14,7 +14,7 @@ class Header extends Component {
   }
 
   openNav() {
-    const innerWidth = window.innerWidth
+    const innerWidth = typeof window !== 'undefined' ? window.innerWidth : ''
     //https://stackoverflow.com/questions/14949011/random-color-from-array
     const colors = ['#EEA4F9', '#F7D6AC', '#E4FCCC', '#A7D7FA']
     if (innerWidth < 769) {
@@ -24,7 +24,7 @@ class Header extends Component {
   }
 
   closeNav() {
-    const innerWidth = window.innerWidth
+    const innerWidth = typeof window !== 'undefined' ? window.innerWidth : ''
     if (innerWidth < 769) {
       this.menuItems.current.style.width = '0%'
     }
@@ -32,7 +32,7 @@ class Header extends Component {
 
 
   render() {
-    const path = window.location.pathname
+    const path = typeof window !== 'undefined' ?  window.location.pathname : ''
     return (
       <header>
         <div className='nav-container'>

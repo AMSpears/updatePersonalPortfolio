@@ -11,7 +11,8 @@ import TriviaGame from '../../images/projects/trivia-game.jpg'
 import WeatherApp from '../../images/projects/weather-app-tb.jpg'
 
 const OtherProjects = () => {
-  const innerWidth  = window.innerWidth
+  const innerWidth = typeof window !== 'undefined' ? window.innerWidth : ''
+
   return (
     <div  id = 'other-projects' className = 'other-projects-section-container'>
       <div>

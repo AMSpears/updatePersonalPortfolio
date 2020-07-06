@@ -3,7 +3,8 @@ import './contact.scss'
 
 
 const Contact = () => {
-  const path = window.location.pathname
+  const path = typeof window !== 'undefined'  ? window.location.pathname : ''
+
   return (
     <div id = 'contact' className = 'contact-container'>
       { path === '/' ?

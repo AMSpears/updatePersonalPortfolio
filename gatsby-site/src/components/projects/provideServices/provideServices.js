@@ -44,7 +44,7 @@ const ProvideServices = () => {
             <img src = {SectionImgTwo} alt = 'Site img' />
           </div>
           <div id = 'next-project-link-container'>
-            <Link to= '/above-all-security'> Previews project</Link>
+            <Link to= '/above-all-security'> Previous Project</Link>
           </div>
         </div>
       </section>

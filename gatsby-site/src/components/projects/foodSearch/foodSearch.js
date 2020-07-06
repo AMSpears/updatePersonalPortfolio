@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'gatsby'
 import HeaderImg from '../../../images/projects/foodSearch/food-search-1.jpg'
 import SectionImgOne from '../../../images/projects/foodSearch/food-search-2.jpg'
 
@@ -35,6 +36,10 @@ const FoodSearch = () => {
           </div>
           <div className = 'project-img'>
             <img src = {SectionImgOne} alt = 'Site img' />
+          </div>
+          <div id = 'next-project-link-container'>
+            <h3>Next Project</h3>
+            <Link to= '/shopping-list'> Shopping List </Link>
           </div>
         </div>
       </section>

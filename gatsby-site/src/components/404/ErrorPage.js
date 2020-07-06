@@ -1,5 +1,6 @@
 import React from 'react'
-import './ErrorPage.scss'
+import './errorPage.scss'
+
 const ErrorPage = () => {
   return (
     <div className = 'error-page-container'>

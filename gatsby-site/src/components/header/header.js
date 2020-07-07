@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import {Link} from 'gatsby'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import React, {Component} from 'react'
 import Resume from '../../resume/AngieSpears_Resume.pdf'
 import './header.scss'
@@ -51,18 +52,19 @@ class Header extends Component {
               {
                 path === '/' ? (
                   <div>
-                    <a href='#about-me'>About Me</a>
-                    <a href = '#select-works'>Projects</a>
-                    <a href="#medium">Medium</a>
-                    <a href='#other-projects'>Other projects</a>
+                    <AnchorLink to="/#about-me" title="About Me" />
+                    <AnchorLink to="/#select-works" title="Projects" />
+                    <AnchorLink to="/#medium" title="Medium" />
+                    <AnchorLink to="/#other-projects" title="Other projects" />
+                    <AnchorLink to="/#contact" title="Contact" />
                     <a href={Resume} target = '_blank' rel='noreferrer' aria-label='Resume'>Resume</a>
-                    <a href='#contact'>Contact</a>
+
                   </div>
                   ) : (
                   <div>
-                    <Link to= '/'>Home</Link>
-                    <a href={Resume} target = '_blank' rel='noreferrer' aria-label='Resume'>Resume</a>
+                    <Link to="/"> Home </Link>
                     <a href='#contact'>Contact</a>
+                    <a href={Resume} target = '_blank' rel='noreferrer' aria-label='Resume'>Resume</a>
                   </div>
                 )
               }
@@ -85,3 +87,9 @@ Header.defaultProps = {
 }
 
 export default Header
+//  <a href='#about-me'>About Me</a>
+// <a href = '#select-works'>Projects</a>
+// <a href="#medium">Medium</a>
+// <a href='#other-projects'>Other projects</a>
+// <a href={Resume} target = '_blank' rel='noreferrer' aria-label='Resume'>Resume</a>
+// <a href='#contact'>Contact</a>

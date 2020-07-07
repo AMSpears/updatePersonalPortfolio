@@ -3,13 +3,8 @@
 .intro-container {
   display: flex;
   justify-content: left;
-  // background: url('../../../images/tempBioPic.jpg');
-  // background-repeat: no-repeat;
-  // background-attachment: fixed;
-  // background-position: center;
-  // background-size: cover;
-  // max-height: 1000px;
-  // background-size: cover;
+  padding: 20px;
+
   img {
     width: 100vw;
     height:100%;
@@ -20,12 +15,10 @@
     left: 0;
     z-index: -2;
   }
-    padding: 20px;
 
   div {
     max-width: 571px;
     div {
-
       h1 {
         @include header-color;
         @include header-font;
@@ -36,7 +29,6 @@
         color: white;
         text-shadow: 1px 0px #ffffff;
       }
-
     }
     div {
       p {
@@ -56,11 +48,9 @@
 @media only screen and (min-device-width: 769px) {
   .intro-container {
     padding: 300px 200px;
-
     img {
       max-height: 1000px;
     }
-
     div {
       div {
         h1 {

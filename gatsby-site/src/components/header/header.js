@@ -58,7 +58,6 @@ class Header extends Component {
                     <AnchorLink to="/#other-projects" title="Other projects" />
                     <AnchorLink to="/#contact" title="Contact" />
                     <a href={Resume} target = '_blank' rel='noreferrer' aria-label='Resume'>Resume</a>
-
                   </div>
                   ) : (
                   <div>
@@ -87,9 +86,4 @@ Header.defaultProps = {
 }
 
 export default Header
-//  <a href='#about-me'>About Me</a>
-// <a href = '#select-works'>Projects</a>
-// <a href="#medium">Medium</a>
-// <a href='#other-projects'>Other projects</a>
-// <a href={Resume} target = '_blank' rel='noreferrer' aria-label='Resume'>Resume</a>
-// <a href='#contact'>Contact</a>
+

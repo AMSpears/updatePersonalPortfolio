@@ -2,7 +2,7 @@
 
 .contact-container {
   @include mb-section-spacing;
-
+  background-color: white;
   h1 {
     @include header-font;
     @include header-color;

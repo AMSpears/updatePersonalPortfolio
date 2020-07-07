@@ -52,7 +52,7 @@ class Header extends Component {
                 path === '/' ? (
                   <div>
                     <a href='#about-me'>About Me</a>
-                    <a href='#projects' >Projects</a>
+                    <a href='#select-works' >Projects</a>
                     <a href="#medium">Medium</a>
                     <a href='#other-projects'>Other projects</a>
                     <a href={Resume} target = '_blank' rel='noreferrer'>Resume</a>

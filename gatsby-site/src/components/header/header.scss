@@ -13,9 +13,12 @@
   display: flex;
   text-align: center;
   justify-content: space-between;
-  overflow: hidden;
+  background-color: white;
   padding: 24px 27px;
-  margin: 0;
+  width: 100vw;
+  top:0;
+  left:0;
+  position: fixed;
 
   #logo {
     a {
@@ -44,6 +47,7 @@
 
   .nav-container {
     justify-content: center;
+
     #logo {
       padding: 0 10px;
       a {
@@ -53,6 +57,7 @@
     }
   }
   .nav-links-overlay {
+    // display: block;
     height: 100%;
     width: 0;
     position: fixed;

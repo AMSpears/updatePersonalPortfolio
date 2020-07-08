@@ -8,9 +8,11 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
+import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title, image,url }) {
+function SEO({ description, lang, meta, title, image, url , author}) {
+  const { location } = useLocation()
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -34,8 +36,11 @@ function SEO({ description, lang, meta, title, image,url }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
+      title={`${site.siteMetadata.title}`}
+      image={`${site.siteMetadata.url}${site.siteMetadata.image}`}
+      url={`${site.siteMetadata.url}${location}`}
       titleTemplate={`%s | ${site.siteMetadata.title}`}
+      author= {`${site.siteMetadata.author}`}
       meta={[
         {
           name: `description`,
@@ -51,7 +56,7 @@ function SEO({ description, lang, meta, title, image,url }) {
         },
         {
           property: `og:type`,
-          content: `www.angiespears.com`,
+          content: `Portfolio`,
         },
         {
           property: `og:image`,
@@ -63,15 +68,19 @@ function SEO({ description, lang, meta, title, image,url }) {
         },
         {
           name: `twitter:card`,
-          content: `I’m Angie Spears, Grace Hopper alum and full-stack developer based in New York City.`,
+          content: metaDescription,
         },
         {
           name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: author,
         },
         {
           name: `twitter:title`,
-          content: `AngieSpears_`,
+          content: `@AngieSpears_`,
+        },
+        {
+          name: `twitter:image`,
+          content: image,
         },
         {
           name: `twitter:description`,
@@ -95,6 +104,7 @@ SEO.propTypes = {
   title: PropTypes.string.isRequired,
   image: PropTypes.string,
   url: PropTypes.string,
+  author: PropTypes.string
 }
 
 export default SEO

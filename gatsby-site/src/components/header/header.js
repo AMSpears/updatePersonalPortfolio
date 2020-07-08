@@ -62,7 +62,7 @@ class Header extends Component {
                   ) : (
                   <div>
                     <Link to="/"> Home </Link>
-                    <a href='#contact'>Contact</a>
+                    <AnchorLink to={`${path}/#contact`} title="Contact" />
                     <a href={Resume} target = '_blank' rel='noreferrer' aria-label='Resume'>Resume</a>
                   </div>
                 )

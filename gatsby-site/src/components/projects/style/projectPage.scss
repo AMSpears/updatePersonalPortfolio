@@ -8,8 +8,7 @@
 }
 
 .project-details-container {
-  @include mb-section-spacing;
-
+  padding: 20px;
   div {
     .details {
       margin-bottom: 20px;

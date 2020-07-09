@@ -32,6 +32,7 @@
     .nav-links {
       a {
         @include content-font;
+        white-space: nowrap;
       }
     }
  }

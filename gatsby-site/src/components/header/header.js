@@ -54,7 +54,7 @@ class Header extends Component {
                 path === '/' ? (
                   <div>
                     <AnchorLink to="/#about-me" title="About Me" />
-                    <AnchorLink to="/#select-works" title="Projects" />
+                    <AnchorLink to="/#select-works" title="Select Works" />
                     <AnchorLink to="/#medium" title="Medium" />
                     <AnchorLink to="/#other-projects" title="Other projects" />
                     <AnchorLink to="/#contact" title="Contact" />

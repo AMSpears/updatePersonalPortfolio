@@ -2,7 +2,6 @@ import PropTypes from 'prop-types'
 import {Link} from 'gatsby'
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import React, {Component} from 'react'
-import Resume from '../../resume/AngieSpears_Resume.pdf'
 import './header.scss'
 
 class Header extends Component {
@@ -57,13 +56,13 @@ class Header extends Component {
                     <AnchorLink to="/#medium" title="Medium" />
                     <AnchorLink to="/#other-projects" title="Other projects" />
                     <AnchorLink to="/#contact" title="Contact" />
-                    <a href={Resume} target = '_blank' rel='noreferrer' aria-label='Resume'>Resume</a>
+                    <a href='https://drive.google.com/file/d/1Nx0S2JPuZCtLZJPi2oFhy2KghBVt08CT/view?usp=sharing ' target = '_blank' rel='noreferrer' aria-label='Resume'>Resume</a>
                   </div>
                   ) : (
                   <div>
                     <Link to="/"> Home </Link>
                     <AnchorLink to={`${path}/#contact`} title="Contact" />
-                    <a href={Resume} target = '_blank' rel='noreferrer' aria-label='Resume'>Resume</a>
+                    <a href='https://drive.google.com/file/d/1Nx0S2JPuZCtLZJPi2oFhy2KghBVt08CT/view?usp=sharing' target = '_blank' rel='noreferrer' aria-label='Resume'>Resume</a>
                   </div>
                 )
               }

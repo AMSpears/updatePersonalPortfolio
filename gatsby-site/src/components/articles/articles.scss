@@ -22,7 +22,7 @@
   }
 }
 /* BELOW CHANGES TO TABLES */
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
 
   .articles-container {
     div {
@@ -38,7 +38,7 @@
 
 
 /* BELOW CHANGES TO  DESKTOP*/
-@media only screen and (min-device-width: 1081px) {
+@media only screen and (min-width: 1081px) {
 
   .articles-container {
     @include dk-section-spacing;

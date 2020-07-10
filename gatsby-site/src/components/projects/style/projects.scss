@@ -44,7 +44,7 @@
   }
 
   /* BELOW CHANGES TO TABLES AND DESKTOP*/
-  @media only screen and (min-device-width: 769px) {
+  @media only screen and (min-width: 769px) {
     .projects-container {
 
       div {
@@ -58,7 +58,7 @@
     }
   }
     /* BELOW CHANGES TO  DESKTOP*/
-    @media only screen and (min-device-width: 1081px) {
+    @media only screen and (min-width: 1081px) {
       .projects-container {
         @include dk-section-spacing;
 

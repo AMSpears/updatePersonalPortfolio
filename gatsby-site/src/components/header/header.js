@@ -17,15 +17,17 @@ class Header extends Component {
     const innerWidth = typeof window !== 'undefined' ? window.innerWidth : ''
     //https://stackoverflow.com/questions/14949011/random-color-from-array
     const colors = ['#EEA4F9', '#F7D6AC', '#E4FCCC', '#A7D7FA']
-    if (innerWidth < 769) {
+    this.menuItems.current.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]
+    if (innerWidth < 768) {
       this.menuItems.current.style.width = '100%'
-      this.menuItems.current.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]
+    } else if (innerWidth < 1081) {
+      this.menuItems.current.style.width = '50%'
     }
   }
 
   closeNav() {
     const innerWidth = typeof window !== 'undefined' ? window.innerWidth : ''
-    if (innerWidth < 769) {
+    if (innerWidth < 1081) {
       this.menuItems.current.style.width = '0%'
     }
   }

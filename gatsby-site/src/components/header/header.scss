@@ -44,7 +44,7 @@
 }
 
 /*MOBILE MENU BAR SPECIFIC STYLE*/
-@media screen and (max-device-width: 768px) {
+@media screen and (max-device-width: 1080px) {
 
   .nav-container {
     justify-content: center;
@@ -110,7 +110,7 @@
 }
 
 /* BELOW CHANGES TO TABLES AND DESKTOP*/
-@media only screen and (min-device-width: 769px) {
+@media only screen and (min-device-width: 1080px) {
   .nav-container {
     padding: 20px 100px;
     .nav-links {

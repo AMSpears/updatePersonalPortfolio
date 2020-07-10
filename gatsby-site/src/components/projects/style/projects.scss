@@ -46,11 +46,8 @@
   /* BELOW CHANGES TO TABLES AND DESKTOP*/
   @media only screen and (min-device-width: 769px) {
     .projects-container {
-      @include dk-section-spacing;
+
       div {
-        h1 {
-        @include dk-header-font-size;
-        }
         .projects-inner-container {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
@@ -60,3 +57,22 @@
       }
     }
   }
+    /* BELOW CHANGES TO  DESKTOP*/
+    @media only screen and (min-device-width: 1081px) {
+      .projects-container {
+        @include dk-section-spacing;
+
+        div {
+          h1 {
+            @include dk-header-font-size;
+          }
+
+          .projects-inner-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 1.5rem;
+
+          }
+        }
+      }
+    }

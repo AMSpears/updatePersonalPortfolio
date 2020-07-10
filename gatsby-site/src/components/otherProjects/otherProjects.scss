@@ -48,19 +48,10 @@
   }
 }
 
-
-/* BELOW CHANGES TO TABLES AND DESKTOP*/
 @media only screen and (min-device-width: 769px) {
   .other-projects-section-container {
-   @include dk-section-spacing;
 
     div {
-
-      #header-container {
-        h1 {
-          @include dk-header-font-size;
-        }
-      }
       .other-projects-container {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -91,6 +82,23 @@
         .other-projects:nth-child(4),
         .other-projects:nth-child(5) {
           grid-column: span 2;
+        }
+      }
+    }
+  }
+}
+
+
+/* BELOW CHANGES TO DESKTOP*/
+@media only screen and (min-device-width: 1081px) {
+  .other-projects-section-container {
+   @include dk-section-spacing;
+
+    div {
+
+      #header-container {
+        h1 {
+          @include dk-header-font-size;
         }
       }
     }

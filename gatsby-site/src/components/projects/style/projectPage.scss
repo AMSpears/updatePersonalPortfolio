@@ -42,9 +42,6 @@
               @include content-font;
               font-size: 16px;
             }
-            a {
-              text-decoration: none;
-            }
           }
         }
       }
@@ -83,7 +80,6 @@
         @include header-font;
       }
       a {
-        text-decoration: none;
         font-size: 24px;
         @include content-font;
       }
@@ -116,6 +112,9 @@
                 p,
                 a {
                   @include content-font;
+                }
+                a:hover {
+                  opacity: 0.8;
                 }
 
              }

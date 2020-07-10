@@ -19,7 +19,7 @@ const AboveAllSecurity = () => {
               <div>
                 <div className= 'tech-details'>
                   <h2>Links</h2>
-                  <p><a href= "http://above-all-security.com/" target= "blank">Live</a></p>
+                  <p><a href= "http://aboveall-security.com/" target= "blank">Live</a></p>
                   <h2>Technologies</h2>
                   <p>React.js, Node.js, Express.js, Nodemailer</p>
                 </div>

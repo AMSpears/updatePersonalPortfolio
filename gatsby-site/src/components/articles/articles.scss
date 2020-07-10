@@ -21,10 +21,24 @@
     }
   }
 }
-
-
-/* BELOW CHANGES TO TABLES AND DESKTOP*/
+/* BELOW CHANGES TO TABLES */
 @media only screen and (min-device-width: 768px) {
+
+  .articles-container {
+    div {
+      #content-container {
+        a {
+          @include dk-content-font-size;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+
+/* BELOW CHANGES TO  DESKTOP*/
+@media only screen and (min-device-width: 1081px) {
 
   .articles-container {
     @include dk-section-spacing;
@@ -33,13 +47,6 @@
       #header-container {
         h1 {
           @include dk-header-font-size;
-        }
-      }
-
-      #content-container {
-        a {
-          @include dk-content-font-size;
-          cursor: pointer;
         }
       }
     }

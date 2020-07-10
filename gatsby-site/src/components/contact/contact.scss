@@ -28,15 +28,9 @@
 }
 
 
-/* BELOW CHANGES TO TABLES AND DESKTOP*/
+/* BELOW CHANGES TO TABLES*/
 @media only screen and (min-device-width: 768px) {
   .contact-container {
-    @include dk-section-spacing;
-
-    h1 {
-      @include dk-header-font-size;
-      margin-bottom: 100px;
-    }
 
     .contact-links-container {
       flex-direction: row;
@@ -52,6 +46,18 @@
           }
         }
       }
+    }
+  }
+}
+
+/* BELOW CHANGES TO DESKTOP*/
+@media only screen and (min-device-width: 1081px) {
+  .contact-container {
+    @include dk-section-spacing;
+
+    h1 {
+      @include dk-header-font-size;
+      margin-bottom: 100px;
     }
   }
 }

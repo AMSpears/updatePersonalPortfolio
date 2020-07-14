@@ -4,9 +4,6 @@
   @include mb-section-spacing;
 
   div {
-     display: grid;
-     grid-template-columns: repeat(1, 1fr);
-    //  grid-gap: 1rem;
 
     #header-container {
       h1 {
@@ -17,8 +14,9 @@
     }
 
     .other-projects-container {
-      display: flex;
-      flex-flow: column wrap;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
 
       .other-projects {
 

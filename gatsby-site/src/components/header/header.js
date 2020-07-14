@@ -20,14 +20,14 @@ class Header extends Component {
     this.menuItems.current.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]
     if (innerWidth < 768) {
       this.menuItems.current.style.width = '100%'
-    } else if (innerWidth < 1081) {
+    } else if (innerWidth < 1200) {
       this.menuItems.current.style.width = '50%'
     }
   }
 
   closeNav() {
     const innerWidth = typeof window !== 'undefined' ? window.innerWidth : ''
-    if (innerWidth < 1081) {
+    if (innerWidth < 1200) {
       this.menuItems.current.style.width = '0%'
     }
   }

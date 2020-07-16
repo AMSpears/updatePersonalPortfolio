@@ -1,6 +1,6 @@
 import React from "react"
 import './style/intro.scss'
-import BioImage from '../../images/tempBioPic.jpg'
+import BioImage from '../../images/bio_pic.jpg'
 const Intro = () => {
   return (
     <div className = 'intro-container'>

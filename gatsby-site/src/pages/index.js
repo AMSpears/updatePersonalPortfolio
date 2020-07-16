@@ -10,13 +10,11 @@ import OtherProjects from '../components/otherProjects/otherProjects'
 const mainSectionStyle = {
   margin: '0',
   backgroundColor: 'white',
-  // backgroundImage: 'linear-gradient(180deg, #ffffff 80%, red 100%)',
   backgroundAttachment: 'fixed',
   backgroundPosition: 'center',
   backgroundRepeat: 'no-repeat',
   minHeight: '100%',
   transition:'0.3s all'
-
 }
 
 // exploring the idea of changing color per section

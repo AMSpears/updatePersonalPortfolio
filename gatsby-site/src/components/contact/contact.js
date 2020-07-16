@@ -19,6 +19,9 @@ const Contact = () => {
           <a href = 'https://www.linkedin.com/in/angiespears/' target = '_blank' rel='noreferrer'>LinkedIn</a>
         </div>
         <div className = 'contact-link'>
+          <a href = 'https://github.com/amspears' target = '_blank' rel='noreferrer'>Github</a>
+        </div>
+        <div className = 'contact-link'>
           <a href = 'https://www.instagram.com/angiespears_/' target = '_blank' rel='noreferrer'>Instagram</a>
         </div>
         <div className = 'contact-link'>

@@ -3,7 +3,7 @@ module.exports = {
     title: `Angie Spears`,
     description: `I’m Angie Spears, Grace Hopper alum and full-stack developer based in New York City.`,
     author: `Angie Spears`,
-    image: `src/images/tempBioPic.jpg`,
+    image: `src/images/bio_pic.jpg`,
     url: `https://www.angiespears.com/`
   },
   plugins: [

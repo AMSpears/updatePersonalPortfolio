@@ -58,13 +58,13 @@ class Header extends Component {
                     <AnchorLink to="/#medium" title="Medium" />
                     <AnchorLink to="/#other-projects" title="Other projects" />
                     <AnchorLink to="/#contact" title="Contact" />
-                    <a href='https://drive.google.com/file/d/1Nx0S2JPuZCtLZJPi2oFhy2KghBVt08CT/view?usp=sharing ' target = '_blank' rel='noreferrer' aria-label='Resume'>Resume</a>
+                    <a href='https://drive.google.com/file/d/1GkVyzAxqMAKC8q41AybMJzMP8YCZsJ0i/view' target = '_blank' rel='noreferrer' aria-label='Resume'>Resume</a>
                   </div>
                   ) : (
                   <div>
                     <Link to="/"> Home </Link>
                     <AnchorLink to={`${path}/#contact`} title="Contact" />
-                    <a href='https://drive.google.com/file/d/1Nx0S2JPuZCtLZJPi2oFhy2KghBVt08CT/view?usp=sharing' target = '_blank' rel='noreferrer' aria-label='Resume'>Resume</a>
+                    <a href='https://drive.google.com/file/d/1GkVyzAxqMAKC8q41AybMJzMP8YCZsJ0i/view' target = '_blank' rel='noreferrer' aria-label='Resume'>Resume</a>
                   </div>
                 )
               }

@@ -21,7 +21,7 @@ const FoodSearch = () => {
                 <div className = 'tech-details'>
                   <h2>Links</h2>
                   <p>
-                    <a href= "www.food-searches.surge.sh/" target= "blank">Live</a>, <a href= "https://github.com/AMSpears/FoodSearch-Frontend" target= "blank">Github</a>
+                    <a href= "http://food-searches.surge.sh/" target= "blank">Live</a>, <a href= "https://github.com/AMSpears/FoodSearch-Frontend" target= "blank">Github</a>
                   </p>
                   <h2>Technologies</h2>
                   <p>Yelp API, React.js, Node.js, Express.js</p>
